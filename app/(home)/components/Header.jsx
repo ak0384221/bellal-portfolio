@@ -5,7 +5,7 @@ export default function Header() {
     <header className=" flex h-[15vh] items-center  gap-4 ">
       <div className="picture  size-18 border-2  rounded-full relative overflow-hidden">
         <img
-          src="/ayaan.png" // path inside public folder
+          src="./ayaan.png" // path inside public folder
           alt="Ayaan"
           className="absolute w-full h-full object-cover"
         />

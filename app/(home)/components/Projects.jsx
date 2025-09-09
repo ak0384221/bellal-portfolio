@@ -14,13 +14,13 @@ export default function Projects({ project }) {
       <Paragraph>{project?.summary}</Paragraph>
 
       <Link
-        href={project?.github}
+        href={project?.live}
         className={`${ubuntuMono.className} font-light text-neutral-300`}
       >
         <p>{project?.live}</p>
       </Link>
       <Link
-        href={project?.live}
+        href={project?.github}
         className={`${ubuntuMono.className} font-light text-neutral-300`}
       >
         <p> {project?.github}</p>

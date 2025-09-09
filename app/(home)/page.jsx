@@ -28,7 +28,7 @@ export default function Home() {
       <section>
         <Heading>I'm</Heading>
         <Paragraph>
-        Bellal, frontend developer who believes  products aren’t just about visuals—they’re about structure, performance, and maintainability. I focus on building clean, user-friendly interfaces backed by readable, well-structured, and efficient code.
+        Bellal, a frontend developer who believes  products aren’t just about visuals—they’re about structure, performance, and maintainability. I focus on building clean, user-friendly interfaces backed by readable, well-structured, and efficient code.
         </Paragraph>
       </section>
 

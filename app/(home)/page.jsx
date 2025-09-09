@@ -28,9 +28,7 @@ export default function Home() {
       <section>
         <Heading>I'm</Heading>
         <Paragraph>
-          Ayaan, a frontend enthusiast who enjoys turning ideas into interactive
-          web experiences. I focus on React, Next.js, and Tailwind CSS to create
-          fast, user-friendly, and beautiful interfaces.
+        Bellal, frontend developer who believes  products aren’t just about visuals—they’re about structure, performance, and maintainability. I focus on building clean, user-friendly interfaces backed by readable, well-structured, and efficient code.
         </Paragraph>
       </section>
 

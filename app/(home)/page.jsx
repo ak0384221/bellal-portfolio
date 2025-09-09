@@ -1,12 +1,11 @@
-import { frontendTech, contacts, projects } from "../data";
-import MySVG from "../svg";
-import Heading from "./atomic-Component/heading";
-import Paragraph from "./atomic-Component/paragraph";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Projects from "./components/Projects";
-import Techs from "./components/Techs";
-import { inter, roboto } from "../layout";
+import { frontendTech, contacts, projects } from "@/app/data";
+import MySVG from "@/app/svg";
+import Heading from "@/app/(home)/atomic-Component/heading";
+import Paragraph from "@/app/(home)/atomic-Component/paragraph";
+import Footer from "@/app/(home)/components/Footer";
+import Header from "@/app/(home)/components/Header";
+import Projects from "@/app/(home)/components/Projects";
+import Techs from "@/app/(home)/components/Techs";
 export default function Home() {
   return (
     <div className="page  md:w-1/2 mx-auto p-5 space-y-10">

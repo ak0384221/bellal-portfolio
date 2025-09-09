@@ -57,20 +57,20 @@ const contacts = [
   {
     platform: "LinkedIn",
     id: "your-linkedin-id", // your LinkedIn username or profile id
-    link: "linkedin.com/in/md-bellal-hossain-50a027373",
-    img: "https://img.freepik.com/premium-vector/vector-linkedin-apps-logo-rounded-asset-isolated_1004619-457.jpg?semt=ais_hybrid&w=740&q=80", // path to LinkedIn logo image
+    link: "https://linkedin.com/in/md-bellal-hossain-50a027373",
+    img: "./linkedin.png",
   },
   {
     platform: "GitHub",
     id: "your-github-username",
-    link: "github.com/ak0384221",
-    img: "https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png", // path to GitHub logo image
+    link: "https://github.com/ak0384221",
+    img: "./github.png",
   },
   {
     platform: "Email",
     id: "your.email@example.com",
-    link: "bh0384221@gmail.com",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiHbcrRBpAzA-pIA9nKEf3ZphaQeNCTzkZSQ&s", // path to email icon
+    link: "mailto:bh0384221@gmail.com",
+    img: "./google.png",
   },
 ];
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ubuntuMono } from "../../layout";
+import { ubuntuMono } from "@/app/layout";
 
 export default function ShowLnk({ children, href }) {
   console.log(children);

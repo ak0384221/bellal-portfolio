@@ -1,4 +1,4 @@
-import { inter, saira } from "../../layout";
+import { saira } from "@/app/layout";
 
 export default function Heading({ children }) {
   return (

@@ -1,4 +1,4 @@
-import { inter, roboto } from "../../layout";
+import { inter } from "@/app/layout";
 
 export default function Paragraph({ children }) {
   return (

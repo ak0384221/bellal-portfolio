@@ -1,4 +1,4 @@
-import { roboto } from "../../layout";
+import { roboto } from "@/app/layout";
 
 export default function Techs({ techs }) {
   return (

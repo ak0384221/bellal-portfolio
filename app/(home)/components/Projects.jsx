@@ -1,8 +1,7 @@
-import MySVG from "@/app/svg";
-import Paragraph from "../atomic-Component/paragraph";
-import { inter, roboto, ubuntu, ubuntuMono } from "../../layout";
+import Paragraph from "@/app/(home)/atomic-Component/paragraph";
+import { inter, ubuntuMono } from "@/app/layout";
 import Link from "next/link";
-import Heading from "../atomic-Component/heading";
+import Heading from "@/app/(home)/atomic-Component/heading";
 
 export default function Projects({ project }) {
   return (

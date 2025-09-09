@@ -1,4 +1,4 @@
-import { inter, saira } from "../../layout";
+import { inter, saira } from "@/app/layout";
 
 export default function Header() {
   return (

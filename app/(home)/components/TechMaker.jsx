@@ -1,3 +1,5 @@
+import { inter, roboto, ubuntu, ubuntuMono } from "@/app/layout";
+
 export default function TechMaker({ category, items }) {
   return (
     <>
@@ -6,7 +8,9 @@ export default function TechMaker({ category, items }) {
         className="bg-transparent border border-neutral-800 rounded-sm p-2 cursor-pointer my-2 break-inside-avoid relative "
       >
         {/* Category Title */}
-        <h3 className="text-lg  text-neutral-300 mb-3 capitalize font-bold">
+        <h3
+          className={`text-md text-neutral-300 mb-3 capitalize font-bold ${ubuntu.className}`}
+        >
           {category
             .replace(/([A-Z])/g, " $1")
             .replace(/^./, (str) => str.toUpperCase())}
@@ -15,7 +19,10 @@ export default function TechMaker({ category, items }) {
         {/* Nested List */}
         <ul className="ml-2 list-disc list-inside space-y-1 text-neutral-400 text-sm ">
           {items.map((item) => (
-            <li key={item} className="hover:text-white transition-colors ">
+            <li
+              key={item}
+              className={`hover:text-white transition-colors ${ubuntuMono.className}`}
+            >
               {item}
             </li>
           ))}

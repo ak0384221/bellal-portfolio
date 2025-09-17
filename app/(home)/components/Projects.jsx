@@ -1,4 +1,4 @@
-import { inter } from "@/app/layout";
+import { inter, ubuntuMono } from "@/app/layout";
 
 export default function Projects({ project }) {
   return (
@@ -6,7 +6,7 @@ export default function Projects({ project }) {
       key={project.name}
       className="mb-6 p-4 border border-neutral-800 rounded-lg text-neutral-200"
     >
-      <h3 className="text-xl font-bold text-green-400">{project.name}</h3>
+      <h3 className="text-xl font-bold text-white">{project.name}</h3>
       <p className="text-sm text-neutral-400">
         {project.type} • {project.date}
       </p>
@@ -14,7 +14,7 @@ export default function Projects({ project }) {
       <ul className="list-disc list-inside mt-2 space-y-1">
         {project.summary.map((point, index) => (
           <li
-            className={`text-neutral-200 ${inter.className} font-extralight`}
+            className={`text-neutral-200 ${inter.className} font-extralight text-sm`}
             key={index}
           >
             {point}
@@ -22,7 +22,7 @@ export default function Projects({ project }) {
         ))}
       </ul>
 
-      <p className="mt-2 text-neutral-200">
+      <p className={`mt-2 text-neutral-300 text-sm ${ubuntuMono.className}`}>
         Tech Stack: {project.tech.join(", ")}
       </p>
 
@@ -31,7 +31,7 @@ export default function Projects({ project }) {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-yellow-400 hover:underline"
+          className="text-neutral-300 border border-blue-800 hover:bg-blue-700 px-2 py-1 rounded-sm transition-colors"
         >
           GitHub
         </a>
@@ -39,7 +39,7 @@ export default function Projects({ project }) {
           href={project.live}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-yellow-400 hover:underline"
+          className="text-neutral-300 border border-blue-800 hover:bg-blue-700 px-2 py-1 rounded-sm transition-colors"
         >
           Live Demo
         </a>

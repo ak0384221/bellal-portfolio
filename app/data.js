@@ -24,13 +24,7 @@ const frontendTech = {
     "Microsoft Clarity",
   ],
 
-  ["testing"]: [
-    "Vitest",
-    "Jest",
-    "React Testing Library",
-    "Cypress",
-    "Playwright",
-  ],
+  ["testing"]: ["Vitest", "Jest", "React Testing Library", "Cypress"],
 };
 
 const projects = [

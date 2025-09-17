@@ -20,7 +20,7 @@ export default function Footer({ contacts }) {
                   </div>
 
                   <Link
-                    className={`${ubuntuMono.className} text-sm`}
+                    className={`${ubuntuMono.className} text-sm text-neutral-300`}
                     target="_blank"
                     href={contact.link}
                   >

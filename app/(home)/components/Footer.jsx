@@ -1,7 +1,6 @@
 import Heading from "@/app/(home)/atomic-Component/heading";
 import Link from "next/link";
 import { ubuntuMono } from "@/app/layout";
-import MySVG from "@/app/svg";
 export default function Footer({ contacts }) {
   return (
     <footer>

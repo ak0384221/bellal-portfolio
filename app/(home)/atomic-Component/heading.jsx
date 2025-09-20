@@ -11,7 +11,7 @@ const sizeMap = {
 export default function Heading({ textSize = "2xl", children }) {
   return (
     <h2
-      className={`${sizeMap[textSize]}  font-bold font capitalize mb-2 bg-gradient-to-r from-neutral-200 via-neutral-500 to-neutral-900 bg-clip-text text-transparent ${saira.className}`}
+      className={`${sizeMap[textSize]}  font-bold font capitalize mb-2 dark:bg-gradient-to-r from-neutral-200 via-neutral-500 to-neutral-900 bg-clip-text  dark:text-transparent text-neutral-800 ${saira.className}`}
     >
       {children}
     </h2>

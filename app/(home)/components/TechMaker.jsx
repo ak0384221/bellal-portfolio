@@ -9,7 +9,7 @@ export default function TechMaker({ category, items }) {
       >
         {/* Category Title */}
         <h3
-          className={`text-md text-neutral-300 mb-3 capitalize font-bold ${ubuntu.className}`}
+          className={`text-md  dark:text-neutral-300 text-neutral-800 mb-3 capitalize font-bold ${ubuntu.className}`}
         >
           {category
             .replace(/([A-Z])/g, " $1")
@@ -17,11 +17,11 @@ export default function TechMaker({ category, items }) {
         </h3>
 
         {/* Nested List */}
-        <ul className="ml-2 list-disc list-inside space-y-1 text-neutral-400 text-sm ">
+        <ul className="ml-2 list-disc list-inside space-y-1 dark:text-neutral-400 text-sm ">
           {items.map((item) => (
             <li
               key={item}
-              className={`hover:text-white transition-colors ${ubuntuMono.className}`}
+              className={`dark:hover:text-white hover:font-bold transition-colors ${ubuntuMono.className}`}
             >
               {item}
             </li>

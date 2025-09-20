@@ -10,7 +10,7 @@ import TechMaker from "./components/TechMaker";
 
 export default function Home() {
   return (
-    <div className="page  md:w-1/2 mx-auto p-5 space-y-10">
+    <div className="page  md:w-1/2 mx-auto p-2 space-y-10">
       <Header />
 
       <section className="">

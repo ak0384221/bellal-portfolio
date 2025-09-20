@@ -18,13 +18,10 @@ const frontendTech = {
 
   ["tools And Platforms"]: ["Git / GitHub", "Firebase", "Supabase"],
 
-  ["monitoring And Analytics"]: [
-    "Sentry",
-    "Google Analytics",
-    "Microsoft Clarity",
-  ],
+  ["monitoring And Analytics"]: ["Sentry"],
 
   ["testing"]: ["Vitest", "Jest", "React Testing Library", "Cypress"],
+  ["Basic backend techs"]: ["Node js", "Express js", "Mongo DB", "MySql"],
 };
 
 const projects = [

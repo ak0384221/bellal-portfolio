@@ -2,8 +2,8 @@ import { inter, saira } from "@/app/layout";
 
 export default function Header() {
   return (
-    <header className=" flex h-[15vh] items-center  gap-4 ">
-      <div className="picture  size-18 border-2  rounded-full relative overflow-hidden">
+    <header className=" flex h-[15vh] items-center  gap-2 ">
+      <div className="picture  size-18 border-2   rounded-full relative overflow-hidden">
         <img
           src="./ayaan.png" // path inside public folder
           alt="Ayaan"

@@ -10,17 +10,17 @@ export default function Footer({ contacts }) {
           {contacts.map((contact) => {
             return (
               <div key={contact.id}>
-                <li className=" border border-neutral-700 rounded-md hover:bg-neutral-800 transition-colors flex items-center gap-3 p-2 m-2">
+                <li className="border border-neutral-500 rounded-md  flex items-center gap-3 p-2 m-2">
                   <div className="img size-8">
                     <img
                       src={contact.img}
                       alt={contact.platform}
-                      className="w-full h-full object-contain group-hover:scale-105 transition-transform"
+                      className="w-full h-full "
                     />
                   </div>
 
                   <Link
-                    className={`${ubuntuMono.className} text-sm text-neutral-300`}
+                    className={`${ubuntuMono.className} text-sm dark:text-neutral-300`}
                     target="_blank"
                     href={contact.link}
                   >

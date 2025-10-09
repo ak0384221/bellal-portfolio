@@ -80,7 +80,7 @@ const contacts = [
   {
     platform: "Email",
     id: "your.email@example.com",
-    link: "mailto:bh0384221@gmail.com",
+    link: "mailto:bellal.hossain.dev@gmail.com",
     img: "./google.png",
   },
 ];

@@ -15,7 +15,7 @@ export default function Header() {
           MD Bellal hossain
         </h1>
         <p className={`${saira.className} font-extralight text-sm`}>
-          Frontend developer | 15 months of experience <br />
+          Frontend developer | 1.5+ years of experience <br />
           React | Next | Redux
         </p>
       </div>

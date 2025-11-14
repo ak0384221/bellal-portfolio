@@ -43,7 +43,7 @@ const projects = [
     "Codebase organized with reusable utilities, schema-based types, and frontend data shaping for consistent API consumption."
   ],
   github: "https://github.com/ak0384221/Yourstore-frontend",
-  github: "https://github.com/ak0384221/Yourstore-backend",
+  live: "https://github.com/ak0384221/Yourstore-backend",
 }
 ,{
     name: "Vibehives",

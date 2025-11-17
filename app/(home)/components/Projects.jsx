@@ -1,6 +1,7 @@
 import { inter, ubuntuMono } from "@/app/layout";
 
 export default function Projects({ project }) {
+  console.log(project);
   return (
     <div
       key={project.name}
@@ -36,6 +37,7 @@ export default function Projects({ project }) {
       <div className="mt-2 flex space-x-4">
         {project.link.map((item, index) => (
           <a
+            key={index}
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"

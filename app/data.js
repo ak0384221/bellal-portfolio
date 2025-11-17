@@ -27,33 +27,6 @@ const frontendTech = {
 const projects = [
   {
     name: "YourStore",
-    type: "E-Commerce Platform",
-    tech: [
-      "Next.js",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Mongoose",
-      "Tailwind CSS",
-    ],
-    date: "2025-11-01",
-    summary: [
-      "Full-featured e-commerce application supporting both user-side shopping and admin-side store control.",
-      "Role-based access: Admins can manage products, inventory, and order statuses (confirmed, shipped, delivered). Users can browse products, add items to cart, and place orders.",
-      "Built with a real backend using Node.js, Express, MongoDB, and Mongoose, featuring optimized queries with proper indexing for improved performance.",
-      "Uses Next.js SSG/ISR for fast page loads, better SEO, and improved overall performance.",
-      "100% backend functions test coverage ensuring reliability and error-free production behavior.",
-      "Fully responsive design optimized for mobile, tablet, and large screens, providing a seamless shopping experience.",
-      "Clean, modern UI built with Tailwind CSS, focusing on accessibility, clarity, and smooth UX.",
-      "Secure REST API architecture with input validation, error handling, and scalable route design.",
-      "Efficient shopping features including variant selection, real-time stock checks, and structured cart management.",
-      "Codebase organized with reusable utilities, schema-based types, and frontend data shaping for consistent API consumption.",
-    ],
-    github: "https://github.com/ak0384221/Yourstore-frontend",
-    live: "https://github.com/ak0384221/Yourstore-backend",
-  },
-  {
-    name: "YourStore",
     type: "E-Commerce",
     tech: [
       "Next.js",

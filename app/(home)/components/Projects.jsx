@@ -6,7 +6,12 @@ export default function Projects({ project }) {
       key={project.name}
       className="mb-6 p-4 border border-neutral-800 rounded-lg "
     >
-      <h3 className="text-xl font-bold dark:text-white">{project.name}</h3>
+      <h3 className="text-xl font-bold dark:text-white">
+        {project.name}{" "}
+        <span className="text-sm capitalize font-ubuntu text-green-500">
+          {project.status}
+        </span>
+      </h3>
       <p className="text-sm dark:text-neutral-400">
         {project.type} • {project.date}
       </p>
@@ -29,22 +34,16 @@ export default function Projects({ project }) {
       </p>
 
       <div className="mt-2 flex space-x-4">
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border border-black hover:bg-black hover:text-white dark:text-white  dark:border-neutral-500 dark:hover:bg-white dark:hover:text-black px-2 py-1 rounded-sm transition-colors"
-        >
-          GitHub
-        </a>
-        <a
-          href={project.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border border-black hover:bg-black hover:text-white dark:text-white  dark:border-neutral-500 dark:hover:bg-white dark:hover:text-black px-2 py-1 rounded-sm transition-colors"
-        >
-          Live Demo
-        </a>
+        {project.link.map((item, index) => (
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-black hover:bg-black hover:text-white dark:text-white  dark:border-neutral-500 dark:hover:bg-white dark:hover:text-black px-2 py-1 rounded-sm transition-colors capitalize"
+          >
+            {item.name}
+          </a>
+        ))}
       </div>
     </div>
   );

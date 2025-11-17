@@ -26,26 +26,74 @@ const frontendTech = {
 
 const projects = [
   {
-  name: "YourStore",
-  type: "E-Commerce Platform",
-  tech: ["Next.js", "Node.js", "Express", "MongoDB", "Mongoose", "Tailwind CSS"],
-  date: "2025-11-01",
-  summary: [
-    "Full-featured e-commerce application supporting both user-side shopping and admin-side store control.",
-    "Role-based access: Admins can manage products, inventory, and order statuses (confirmed, shipped, delivered). Users can browse products, add items to cart, and place orders.",
-    "Built with a real backend using Node.js, Express, MongoDB, and Mongoose, featuring optimized queries with proper indexing for improved performance.",
-    "Uses Next.js SSG/ISR for fast page loads, better SEO, and improved overall performance.",
-    "100% backend functions test coverage ensuring reliability and error-free production behavior.",
-    "Fully responsive design optimized for mobile, tablet, and large screens, providing a seamless shopping experience.",
-    "Clean, modern UI built with Tailwind CSS, focusing on accessibility, clarity, and smooth UX.",
-    "Secure REST API architecture with input validation, error handling, and scalable route design.",
-    "Efficient shopping features including variant selection, real-time stock checks, and structured cart management.",
-    "Codebase organized with reusable utilities, schema-based types, and frontend data shaping for consistent API consumption."
-  ],
-  github: "https://github.com/ak0384221/Yourstore-frontend",
-  live: "https://github.com/ak0384221/Yourstore-backend",
-}
-,{
+    name: "YourStore",
+    type: "E-Commerce Platform",
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Tailwind CSS",
+    ],
+    date: "2025-11-01",
+    summary: [
+      "Full-featured e-commerce application supporting both user-side shopping and admin-side store control.",
+      "Role-based access: Admins can manage products, inventory, and order statuses (confirmed, shipped, delivered). Users can browse products, add items to cart, and place orders.",
+      "Built with a real backend using Node.js, Express, MongoDB, and Mongoose, featuring optimized queries with proper indexing for improved performance.",
+      "Uses Next.js SSG/ISR for fast page loads, better SEO, and improved overall performance.",
+      "100% backend functions test coverage ensuring reliability and error-free production behavior.",
+      "Fully responsive design optimized for mobile, tablet, and large screens, providing a seamless shopping experience.",
+      "Clean, modern UI built with Tailwind CSS, focusing on accessibility, clarity, and smooth UX.",
+      "Secure REST API architecture with input validation, error handling, and scalable route design.",
+      "Efficient shopping features including variant selection, real-time stock checks, and structured cart management.",
+      "Codebase organized with reusable utilities, schema-based types, and frontend data shaping for consistent API consumption.",
+    ],
+    github: "https://github.com/ak0384221/Yourstore-frontend",
+    live: "https://github.com/ak0384221/Yourstore-backend",
+  },
+  {
+    name: "YourStore",
+    type: "E-Commerce",
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "TypeScript",
+      "Zod",
+      "Tailwind CSS",
+      "Vercel",
+      "Railway",
+    ],
+    date: "2025-11-01",
+    summary: [
+      "Full-stack eCommerce platform with complete role-based access for users and admins.",
+      "Users can browse products, add to cart, apply discounts, and place orders; admins manage inventory, orders, and product analytics.",
+      "Product pages use Static Site Generation (SSG) with 10-minute ISR revalidation to keep stock, pricing, and discount status always fresh.",
+      "Smart commerce features: advanced filtering, search, pagination, automated discount rules, and a secure checkout system.",
+      "Optimized MongoDB queries using proper indexing and Mongoose populate() for fast and efficient relational lookups.",
+      "Modular, scalable TypeScript architecture with clean separation of controllers, services, models, and utilities.",
+      "End-to-end validation powered by Zod, ensuring type-safe and predictable input handling on both frontend and backend.",
+      "Custom UI states: empty-data screens, fetch-failed error UIs, loading states, and responsive animations.",
+      "Admin dashboard with interactive charts for revenue metrics, product performance, and order insights.",
+      "Deployed frontend on Vercel and backend on Railway with a CI/CD-ready production workflow.",
+    ],
+    link: [
+      {
+        name: "Frontend GitHub",
+        url: "https://github.com/ak0384221/Yourstore-frontend",
+      },
+      {
+        name: "Backend GitHub",
+        url: "https://github.com/ak0384221/Yourstore-backend",
+      },
+      { name: "Live", url: "https://yourstore-frontend.vercel.app/" },
+    ],
+    status: "ongoing & active",
+  },
+  {
     name: "Vibehives",
     type: "Social Media",
     tech: ["React.js", "Firebase", "Tailwind CSS", "React Context API"],
@@ -59,10 +107,13 @@ const projects = [
       "Optimized with  lazy loading, and modular architecture.",
       "Responsive and clean UI built with Tailwind CSS, enhanced with Framer Motion animations.",
       "Implemented image compression for handling large images",
-      "Used zod and react hook form for handling forms"
+      "Used zod and react hook form for handling forms",
     ],
-    github: "https://github.com/ak0384221/skill-up",
-    live: "https://skill-up-704a7.web.app/",
+    link: [
+      { name: "github", url: "https://github.com/ak0384221/skill-up" },
+      { name: "Live", url: "https://skill-up-704a7.web.app/" },
+    ],
+    status: "finished & active",
   },
 
   {
@@ -79,8 +130,14 @@ const projects = [
       "Responsive dashboard provides live transaction summaries and key business insights.",
       "Hidden admin panel for secure real-time monitoring without exposing sensitive tools to regular users.",
     ],
-    github: "https://github.com/ak0384221/MerchandiseManager",
-    live: "https://m-manager-258fb.web.app/",
+    link: [
+      {
+        name: "github",
+        url: "https://github.com/ak0384221/MerchandiseManager",
+      },
+      { name: "live", url: "https://m-manager-258fb.web.app/" },
+    ],
+    status: "finished & active",
   },
 ];
 

@@ -1,7 +1,6 @@
 import { inter, ubuntuMono } from "@/app/layout";
 
 export default function Projects({ project }) {
-  console.log(project);
   return (
     <div
       key={project.name}

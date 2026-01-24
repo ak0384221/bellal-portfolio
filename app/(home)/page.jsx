@@ -10,11 +10,11 @@ import TechMaker from "./components/TechMaker";
 
 export default function Home() {
   return (
-    <div className="page  md:w-1/2 mx-auto p-4 space-y-10">
+    <div className="page  md:w-1/2 mx-auto p-4 space-y-5">
       <Header />
 
       <section className="">
-        <Heading>What i know</Heading>
+        <Heading>I have worked with</Heading>
         <section className="   ">
           <div className="columns-2  rounded-md ">
             {Object.entries(frontendTech).map(([category, items], id) => (
@@ -27,10 +27,13 @@ export default function Home() {
       <section>
         <Heading>I'm</Heading>
         <Paragraph>
-          Bellal, a frontend developer who believes products aren’t just about
-          visuals—they’re about structure, performance, and maintainability. I
-          focus on building clean, user-friendly interfaces backed by readable,
-          well-structured, and efficient code.
+          Bellal,a Javascript based Full Stack Developer with hands-on
+          experience building secure, scalable web applications using Node.js,
+          Express, React,Next and TypeScript, specializing in high-performance
+          REST APIs and role-based systems. Experienced in cloud deployments,
+          CI/CD workflows, database and schema design and performance
+          optimization, with a strong focus on security, maintainability, and
+          production reliability.
         </Paragraph>
       </section>
 

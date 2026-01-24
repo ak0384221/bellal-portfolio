@@ -14,17 +14,60 @@ const frontendTech = {
     "Clerk",
   ],
 
-  ["styling And Animation"]: ["Tailwind CSS", "Framer Motion", "GSAP"],
+  ["styling And Animation"]: ["CSS", "Tailwind", "Framer Motion", "GSAP"],
 
   ["tools And Platforms"]: ["Git / GitHub", "Firebase", "Supabase"],
 
   ["monitoring And Analytics (basics)"]: ["Sentry"],
 
   ["testing (basics)"]: ["Vitest", "Jest", "React Testing Library", "Cypress"],
-  ["backend techs (basics)"]: ["Node js", "Express js", "Mongo DB", "MySql"],
+  ["backend"]: ["Node js", "Express js", "Mongo DB", "PostgreSql"],
+  ["For deployment"]: [
+    "Firebase",
+    "Github pages",
+    "Vercel",
+    "Railway",
+    "Render",
+  ],
 };
 
 const projects = [
+  {
+    name: "YourStore v2.0 poduction backend",
+    type: "E-Commerce",
+    tech: [
+      "Node.js",
+      "Express",
+      "Eraser",
+      "MongoDB",
+      "Mongoose",
+      "Multer",
+      "TypeScript",
+      "Railway",
+      "Render",
+    ],
+    date: "2026-01-10",
+    summary: [
+      "Production-grade Node.js and Express backend with a modular, service-oriented TypeScript architecture, ensuring clean separation of controllers, services, models, and middleware for long-term scalability.",
+      "JWT-based authentication and role-based access control (RBAC) securing protected routes, admin operations, and sensitive business logic across all core services.",
+      "Schema-driven validation and sanitization pipelines enforcing data integrity, predictable API contracts, and protection against malformed or malicious input.",
+      "Scalable MongoDB schema design modeled in Eraser.io, leveraging indexing strategies and aggregation pipelines to optimize high-performance reads, writes, and analytics queries.",
+      "Optimized Mongoose queries and population strategies for reliable product, order, and user services in production commerce workflows.",
+      "Secure file upload and asset management pipeline with server-side validation, storage policies, and controlled access for product images and media.",
+      "RESTful API design with standardized response formats, centralized error handling, and pagination for seamless frontend and third-party integrations.",
+      "Production observability with structured logging, environment-based configuration, and centralized error monitoring to improve stability and debugging.",
+      "CI/CD-ready deployment workflows on Railway and Render, enabling reliable releases, environment isolation, and automated build pipelines.",
+      "Comprehensive API and system architecture documentation supporting team onboarding, maintainability, and future scalability.",
+    ],
+    link: [
+      {
+        name: " GitHub",
+        url: "https://github.com/ak0384221/yourstore-backend-2.0",
+      },
+    ],
+    status: "ongoing & active",
+  },
+  ,
   {
     name: "YourStore",
     type: "E-Commerce",

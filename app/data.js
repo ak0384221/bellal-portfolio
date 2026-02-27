@@ -1,37 +1,120 @@
 const frontendTech = {
-  languages: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "SQL"],
-
-  ["frameworks And Libraries"]: [
-    "React.js",
-    "Next.js",
-    "Redux / Redux Toolkit",
-    "React Router",
-    "TanStack Query",
-    "Zustand",
-    "React Hook Form",
-    "Zod",
-    "Axios",
-    "Clerk",
+  languages: [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "SQL",
+    "NoSQL",
+    "HTML5",
+    "CSS3",
   ],
 
-  ["styling And Animation"]: ["CSS", "Tailwind", "Framer Motion", "GSAP"],
+  frontend: [
+    "React.js",
+    "Next.js",
+    "Redux ,Redux toolkit ,RTK Query",
+    "Zustand",
+    "TanStack Query",
+    "React Router",
+    "React Hook Form",
+    "Axios",
+    "Zod",
+  ],
 
-  ["tools And Platforms"]: ["Git / GitHub", "Firebase", "Supabase"],
+  styling: ["Tailwind CSS", "Framer Motion", "GSAP"],
 
-  ["monitoring And Analytics (basics)"]: ["Sentry"],
+  backend: ["Node.js", "Express.js"],
 
-  ["testing (basics)"]: ["Vitest", "Jest", "React Testing Library", "Cypress"],
-  ["backend"]: ["Node js", "Express js", "Mongo DB", "PostgreSql"],
-  ["For deployment"]: [
+  databases: ["MongoDB", "Mongoose", "PostgreSQL", "Neon", "Drizzle ORM"],
+
+  auth: [
     "Firebase",
-    "Github pages",
+    "Clerk",
+    "next-auth",
+    "JWT based auth",
+    "Session based auth",
+  ],
+
+  storage: ["Supabase Storage", "Firebase Storage", "Cloudinary"],
+
+  tools: ["Git", "GitHub", "Postman"],
+  " Package Manager": ["npm", "yarn", "pnpm"],
+
+  deployment: [
     "Vercel",
-    "Railway",
     "Render",
+    "Railway",
+    "Firebase Hosting",
+    "GitHub Pages",
   ],
 };
 
 const projects = [
+  {
+    name: "StudentDiary – Academic Task & Reporting System",
+    type: "Backend-Centric Web Application",
+    tech: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "Neon (PostgreSQL)",
+      "Drizzle ORM",
+      "Cron Jobs",
+      "WhatsApp API Integration",
+    ],
+    date: "2026-02-24",
+    summary: [
+      "Backend-focused academic management system built with Node.js, Express, and TypeScript following clean architectural separation.",
+      "PostgreSQL database hosted on Neon with Drizzle ORM for type-safe schema definitions and query building.",
+      "Full CRUD operations for students and homework entities with relational schema modeling.",
+      "Automated daily homework notification system that sends WhatsApp messages to parents 15 minutes after homework creation.",
+      "Scheduled weekly academic summary reports dispatched every Thursday at 6:00 PM via cron-based job scheduling.",
+      "Structured database design with proper constraints and relational integrity between students and homework records.",
+      "Designed for future extensibility (authentication, dashboards, analytics, role management).",
+    ],
+    link: [
+      {
+        name: "Backend GitHub",
+        url: "https://github.com/ak0384221/studentDiary_backend",
+      },
+    ],
+    status: "ongoing & active",
+  },
+  {
+    name: "ArticleHub – News Aggregation & Filtering Platform",
+    type: "Full-Stack Web Application",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Tailwind CSS",
+      "Cron Jobs",
+    ],
+    date: "2026-02-20",
+    summary: [
+      "Full-stack news aggregation platform built with Next.js and a TypeScript-based Express backend following modular architecture principles.",
+      "Automated article ingestion using cron jobs to fetch, deduplicate, and persist news data from external APIs.",
+      "Advanced multi-filtering system with strict AND-based query logic supporting date range, author, language, country, and category filters.",
+      "Dynamic filter option generation by extracting unique metadata (authors, countries, categories) directly from stored articles.",
+      "Optimized MongoDB schema design with indexing strategies for high-performance read-heavy feed queries.",
+      "RESTful API design with centralized error handling and standardized response structure for predictable frontend integration.",
+      "Pagination-enabled feed endpoints for scalable content browsing.",
+    ],
+    link: [
+      {
+        name: "Frontend GitHub",
+        url: "https://github.com/ak0384221/ArticleHub-Frontend",
+      },
+      {
+        name: "Backend GitHub",
+        url: "https://github.com/ak0384221/ArticleHub-Backend",
+      },
+    ],
+    status: "active",
+  },
   {
     name: "YourStore v2.0 poduction backend",
     type: "E-Commerce",

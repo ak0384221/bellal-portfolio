@@ -1,51 +1,64 @@
-import { inter, ubuntuMono } from "@/app/layout";
-
 export default function Projects({ project }) {
   return (
-    <div
-      key={project.name}
-      className="mb-6 p-4 border border-neutral-800 rounded-lg "
+    <article
+      className="
+        mb-6 p-5 rounded-xl
+        border border-neutral-700/50
+        bg-gradient-to-br from-neutral-900/40 to-neutral-950/40
+        hover:bg-neutral-900/60
+        hover:border-emerald-500/40
+        transition-all duration-300
+        backdrop-blur-sm
+      "
     >
-      <h3 className="text-xl font-bold dark:text-white">
-        {project.name}{" "}
-        <span className="text-sm capitalize font-ubuntu text-green-500">
+      <div className="absolute bottom-0 right-0 h-52 w-52 rounded-full bg-violet-500/10 blur-3xl pointer-events-none" />
+      <div className="flex items-start justify-between gap-4 mb-3">
+        <h3 className="text-lg font-bold text-white flex-1">{project.name}</h3>
+        <span className="text-xs px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-medium flex-shrink-0">
           {project.status}
         </span>
-      </h3>
-      <p className="text-sm dark:text-neutral-400">
+      </div>
+
+      <p className="text-sm text-slate-400 mb-3">
         {project.type} • {project.date}
       </p>
 
-      <ul className="list-disc list-inside mt-2 space-y-1">
+      <ul className="list-disc list-inside space-y-1.5 mb-4">
         {project.summary.map((point, index) => (
-          <li
-            className={`dark:text-neutral-200 ${inter.className} dark:font-extralight text-sm`}
-            key={index}
-          >
+          <li key={index} className="text-sm text-slate-300 leading-relaxed">
             {point}
           </li>
         ))}
       </ul>
 
-      <p
-        className={`mt-2 dark:text-neutral-300  text-sm ${ubuntuMono.className}`}
-      >
-        Tech Stack: {project.tech.join(", ")}
+      <p className="text-sm text-slate-400 mb-4">
+        <span className="text-slate-300">Tech Stack:</span>{" "}
+        {project.tech.join(", ")}
       </p>
 
-      <div className="mt-2 flex space-x-4">
+      <div className="flex flex-wrap gap-2">
         {project.link.map((item, index) => (
           <a
             key={index}
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-black hover:bg-black hover:text-white dark:text-white  dark:border-neutral-500 dark:hover:bg-white dark:hover:text-black px-2 py-1 rounded-sm transition-colors capitalize"
+            className="
+              px-3 py-1.5 text-xs rounded-md
+              border border-neutral-600
+              text-slate-200
+              bg-neutral-800/40
+              hover:bg-emerald-500/10
+              hover:border-emerald-400
+              hover:text-emerald-300
+              transition-all duration-200
+              font-medium
+            "
           >
-            {item.name}
+            {item.name} →
           </a>
         ))}
       </div>
-    </div>
+    </article>
   );
 }

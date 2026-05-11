@@ -2,7 +2,7 @@ import { inter, saira } from "@/app/layout";
 
 export default function Header() {
   return (
-    <header className=" flex h-[15vh] items-center  gap-2 ">
+    <header className=" flex  p-2 items-center  gap-2 ">
       <div className="picture  size-18 border-2   rounded-full relative overflow-hidden">
         <img
           src="./ayaan.png" // path inside public folder
@@ -14,10 +14,11 @@ export default function Header() {
         <h1 className={`${inter.className} font-extrabold text-3xl`}>
           MD Bellal hossain
         </h1>
-        <p className={`${saira.className} font-extralight text-sm`}>
-          Software developer {/* 1.5+ years of experience <br /> */}| React |
-          Express | PostgreSql | MongoDB
-        </p>
+        {/* Badge */}
+        <div className="my-2 inline-flex items-center gap-2 rounded-full bg-cyan-400/5 px-4 py-2 text-[11px] text-cyan-300">
+          <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
+          Data Analyst • ETL Engineer • Developer
+        </div>
       </div>
     </header>
   );

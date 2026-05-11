@@ -1,50 +1,36 @@
 import { frontendTech, contacts, projects } from "@/app/data";
-import MySVG from "@/app/svg";
-import Heading from "@/app/(home)/atomic-Component/heading";
-import Paragraph from "@/app/(home)/atomic-Component/paragraph";
-import Footer from "@/app/(home)/components/Footer";
 import Header from "@/app/(home)/components/Header";
-import Projects from "@/app/(home)/components/Projects";
-
-import TechMaker from "./components/TechMaker";
+import HeroSection from "@/app/(home)/components/HeroSection";
+import TechSection from "@/app/(home)/components/TechSection";
+import AboutSection from "@/app/(home)/components/AboutSection";
+import WorkflowSection from "@/app/(home)/components/new";
+import ProjectsSection from "@/app/(home)/components/ProjectsSection";
+import Footer from "@/app/(home)/components/Footer";
 
 export default function Home() {
   return (
-    <div className="page  md:w-1/2 mx-auto p-4 space-y-5">
-      <Header />
+    <div className="min-h-screen bg-black">
+      <div className="max-w-4xl mx-auto  p-5">
+        {/* Header Section */}
+        <Header />
 
-      <section className="">
-        <Heading>I have worked with</Heading>
-        <section className="   ">
-          <div className="columns-2  rounded-md ">
-            {Object.entries(frontendTech).map(([category, items], id) => (
-              <TechMaker key={id} category={category} items={items} />
-            ))}
-          </div>
-        </section>
-      </section>
+        {/* Hero Section */}
+        <HeroSection />
+        {/* About Section */}
+        <AboutSection />
 
-      <section>
-        <Heading>I'm</Heading>
-        <Paragraph>
-          Bellal,a Javascript based Full Stack Developer with hands-on
-          experience building secure, scalable web applications using Node.js,
-          Express, React,Next and TypeScript, specializing in high-performance
-          REST APIs and role-based systems. Experienced in cloud deployments,
-          CI/CD workflows, database and schema design and performance
-          optimization, with a strong focus on security, maintainability, and
-          production reliability.
-        </Paragraph>
-      </section>
+        {/* Tech Stack Section */}
+        <TechSection frontendTech={frontendTech} />
 
-      <section>
-        <Heading> projects that defines my dev journey</Heading>
-        {projects.map((project, id) => (
-          <Projects key={id} project={project} />
-        ))}
-      </section>
+        {/* Workflow Section */}
+        <WorkflowSection />
 
-      <Footer contacts={contacts} />
+        {/* Projects Section */}
+        <ProjectsSection projects={projects} />
+
+        {/* Footer / Contact Section */}
+        <Footer contacts={contacts} />
+      </div>
     </div>
   );
 }

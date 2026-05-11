@@ -1,4 +1,5 @@
 import { saira } from "@/app/layout";
+
 const sizeMap = {
   sm: "text-sm",
   base: "text-base",
@@ -8,10 +9,15 @@ const sizeMap = {
   "3xl": "text-3xl",
   "4xl": "text-4xl",
 };
-export default function Heading({ textSize = "2xl", children }) {
+
+export default function Heading({
+  textSize = "2xl",
+  children,
+  className = "",
+}) {
   return (
     <h2
-      className={`${sizeMap[textSize]}  font-bold font capitalize mb-2 dark:bg-gradient-to-r from-neutral-200 via-neutral-500 to-neutral-900 bg-clip-text  dark:text-transparent text-neutral-800 ${saira.className}`}
+      className={`${sizeMap[textSize]} font-bold text-left capitalize text-white ${saira.className} ${className}`}
     >
       {children}
     </h2>

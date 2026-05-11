@@ -11,7 +11,7 @@ export default function Projects({ project }) {
         backdrop-blur-sm
       "
     >
-      <div className="absolute bottom-0 right-0 h-52 w-52 rounded-full bg-violet-500/10 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-0 h-52 w-52 rounded-full bg-cyan-500/10 blur-2xl pointer-events-none" />
       <div className="flex items-start justify-between gap-4 mb-3">
         <h3 className="text-lg font-bold text-white flex-1">{project.name}</h3>
         <span className="text-xs px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-medium flex-shrink-0">

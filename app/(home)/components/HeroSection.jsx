@@ -7,8 +7,7 @@ export default function HeroSection() {
   return (
     <section className="relative   rounded-3xl   to-slate-950  md:p-2 ">
       {/* Glow effects */}
-      <div className="absolute -top-10 left-0 h-52 w-52 rounded-full bg-cyan-500/10 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-0 h-52 w-52 rounded-full bg-violet-500/10 blur-3xl pointer-events-none" />
+      <div className="absolute -top-10 right-0 h-40 w-40 rounded-full bg-cyan-500/30 blur-3xl pointer-events-none" />
 
       <div className="relative z-10">
         {/* Main Heading */}
@@ -61,8 +60,8 @@ export default function HeroSection() {
           />
           <HeroCard
             label="Stack"
-            title="SQL • Power BI • Next.js"
-            description="Combining analytics, backend systems, and modern web technologies."
+            title="SQL • Power BI • Excel • Power Query"
+            description="Combining analytics, Business Intelligence, and modern web technologies For Process automation."
           />
         </div>
       </div>

@@ -27,14 +27,14 @@ export default function HeroSection() {
             </span>
             , and{" "}
             <span className="text-yellow-300 font-semibold">
-              Software Development
+              Busness Intelligence
             </span>
             . I design and implement scalable data systems, robust
             transformation pipelines, and interactive dashboards that turn raw
             data into actionable business intelligence. My focus is on
             delivering clean, reliable datasets and performance-driven analytics
-            solutions using SQL, modern data architectures, and backend
-            engineering best practices.
+            solutions using SQL, modern data architectures, and data engineering
+            best practices.
           </Paragraph>
         </div>
 

@@ -1,32 +1,32 @@
 export default function DataWorkflow() {
   const steps = [
     {
-      title: "Bronze Layer",
-      subtitle: "Raw Data Ingestion",
-      desc: "Collect raw data from CSV files, APIs, ERP systems, and CRM platforms. Data is stored as-is without transformations.",
-      icon: "🟫",
-      tag: "BRONZE",
+      title: "Develop & Deliver",
+      subtitle: "Software Solutions",
+      desc: "Build web applications, APIs, and backend systems using JavaScript, React, Node.js, and modern development practices.",
+      icon: "💻",
+      tag: "DEV",
     },
     {
-      title: "Silver Layer",
-      subtitle: "Cleaned & Standardized Data",
-      desc: "Handle missing values, remove duplicates, standardize formats, and validate data quality for consistency across datasets.",
-      icon: "⚪",
-      tag: "SILVER",
-    },
-    {
-      title: "Gold Layer",
-      subtitle: "Business-Ready Data Models",
-      desc: "Transform cleaned datasets into structured analytical models using ETL pipelines, joins, aggregations, and schema design.",
-      icon: "🟨",
-      tag: "GOLD",
-    },
-    {
-      title: "BI Analyst Layer",
-      subtitle: "Insights & Decision Making",
-      desc: "Build dashboards, KPI systems, and reporting layers to generate insights that support strategic business decisions.",
+      title: "Analyze & Model",
+      subtitle: "Data & Insights",
+      desc: "Turn business data into structured reporting, dashboards, ETL workflows, and KPI-driven insights using SQL and analytics techniques.",
       icon: "📊",
-      tag: "BI",
+      tag: "DATA",
+    },
+    {
+      title: "Secure & Operate",
+      subtitle: "Linux Infrastructure",
+      desc: "Manage users, permissions, filesystems, networking, firewalls, and hardening tasks to keep systems safe and reliable.",
+      icon: "🛡️",
+      tag: "SYS",
+    },
+    {
+      title: "Improve & Scale",
+      subtitle: "Reliable Operations",
+      desc: "Focus on automation, monitoring, maintainability, and performance so development, analytics, and infrastructure work together seamlessly.",
+      icon: "⚙️",
+      tag: "OPS",
     },
   ];
 
@@ -34,11 +34,11 @@ export default function DataWorkflow() {
     <section className="w-full max-w-5xl mx-auto px-4 py-10">
       {/* Header */}
       <h2 className="text-2xl font-bold text-white mb-2">
-        ⚡ Medallion Data Architecture Workflow
+        ⚡ Experience across domains
       </h2>
       <p className="text-neutral-400 text-sm mb-10 max-w-2xl">
-        From raw ingestion to business intelligence using Bronze, Silver, Gold
-        architecture.
+        A practical blend of development, data, and systems work shaped by real
+        projects and hands-on experience across multiple technical areas.
       </p>
 
       {/* Timeline */}

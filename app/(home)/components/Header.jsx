@@ -17,7 +17,7 @@ export default function Header() {
         {/* Badge */}
         <div className="my-2 inline-flex items-center gap-2 rounded-full bg-cyan-400/5 px-4 py-2 text-[11px] text-cyan-300">
           <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
-          System Admin • Data Analyst • ETL Engineer • Developer
+          Developer • Data Analyst • Linux Engineer
         </div>
       </div>
     </header>

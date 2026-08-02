@@ -1,36 +1,73 @@
 const frontendTech = {
-  languages: ["SQL", "JavaScript (ES6+)", "TypeScript", "Python (Basic)"],
+  softwareDevelopment: [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "Python (Basic)",
+    "Bash Scripting",
+  ],
 
   dataAnalytics: [
-    "Data Cleaning",
-    "Data Transformation",
+    "SQL",
     "ETL Pipelines",
-    "Data Warehousing",
+    "Data Modeling",
     "Medallion Architecture",
     "Star Schema Design",
-    "Data Modeling",
     "EDA",
     "KPI Tracking",
     "Trend Analysis",
     "Business Reporting",
   ],
 
-  visualization: [
+  systemAdministration: [
+    "Linux (RHEL/CentOS/Ubuntu/Debian)",
+    "Windows",
+    "User & Group Management",
+    "File Permissions & ACLs",
+    "Disk Management & LVM",
+    "Boot Process & System Logging",
+  ],
+
+  systemSecurity: [
+    "SSH Hardening",
+    "GRUB Security",
+    "Password Policy Enforcement",
+    "sudo/visudo Privilege Management",
+    "File Integrity Monitoring (AIDE)",
+    "Malware & Rootkit Scanning",
+    "Full Disk Encryption (LUKS/dm-crypt)",
+  ],
+
+  networkingAndFirewall: [
+    "TCP/IP, DNS, Subnetting",
+    "iptables (Stateful Firewalls)",
+    "Network Scanning (Nmap)",
+    "Firewall Rules & Logging",
+  ],
+
+  databases: ["SQL Server", "PostgreSQL", "MongoDB", "Database Design"],
+
+  businessIntelligence: [
     "Power BI",
-    "Metabase",
     "Excel Dashboards",
+    "Power Query",
     "Interactive Reports",
   ],
 
-  databases: ["SQL Server", "PostgreSQL", "MongoDB"],
-
-  backend: ["Node.js", "Express.js", "REST APIs", "API Integration"],
-
-  frontend: ["React.js", "Next.js", "Redux Toolkit", "RTK Query"],
-
-  tools: ["Excel", "Power Query", "Git", "GitHub", "Postman"],
-
-  deployment: ["Vercel", "Railway", "GitHub Pages"],
+  tools: [
+    "Git",
+    "GitHub",
+    "Postman",
+    "SSH",
+    "AIDE",
+    "John the Ripper",
+    "Vercel",
+    "Railway",
+  ],
 };
 
 const projects = [
@@ -54,11 +91,10 @@ const projects = [
     date: "2026-05-10",
 
     summary: [
-      "Built a Modern Data Warehouse in SQL Server using Medallion Architecture (Bronze, Silver, Gold).",
-      "Processed and transformed 80K+ sales records and 18K+ customer records from ERP and CRM CSV datasets.",
-      "Developed end-to-end ETL pipelines for data ingestion, cleansing, standardization, and transformation.",
-      "Designed a Star Schema with fact and dimension tables optimized for reporting and analytical workloads.",
-      "Implemented layered SQL scripts and project documentation following industry-standard data engineering practices.",
+      "Built a modern data warehouse in SQL Server using Medallion Architecture for reliable analytics workflows.",
+      "Processed and transformed large business datasets with a focus on data quality, consistency, and reporting readiness.",
+      "Developed end-to-end ETL pipelines for ingestion, cleansing, standardization, and transformation.",
+      "Designed star-schema models that support reporting, KPI tracking, and analytical scalability.",
     ],
 
     link: [
@@ -74,7 +110,7 @@ const projects = [
   {
     name: "Production, Sales & Operations Analysis Dashboard",
 
-    type: "Data Analysis & Visualization",
+    type: "Analytics & BI Reporting",
 
     category: ["data", "analytics", "dashboard"],
 
@@ -91,11 +127,9 @@ const projects = [
     date: "2026-04-25",
 
     summary: [
-      "Analyzed 1000+ rows of sales and production data to evaluate business and operational performance.",
-      "Performed Top Buyer and Product Analysis to identify revenue contribution and key performers.",
-      "Conducted Order vs Production and Defect Analysis to highlight production gaps and quality issues.",
-      "Calculated KPIs including On-Time Delivery Rate, Sales Trends, and Defect Percentage.",
-      "Built a dynamic dashboard using Pivot Tables, Charts, and Slicers for interactive reporting and insights.",
+      "Analyzed sales and production data to highlight operational performance, revenue trends, and quality gaps.",
+      "Built KPI-focused dashboards for on-time delivery, sales movement, defect rates, and top-performing products.",
+      "Used Excel and business reporting techniques to create a practical decision-support interface for stakeholders.",
     ],
 
     link: [
@@ -111,7 +145,7 @@ const projects = [
   {
     name: "StudentDiary – Academic Task & Reporting System",
 
-    type: "Backend-Centric Web Application",
+    type: "Backend & Data Management",
 
     category: ["software", "analytics"],
 
@@ -120,11 +154,9 @@ const projects = [
     date: "2026-02-24",
 
     summary: [
-      "Academic management system for tracking homework, student records, and reporting workflows.",
-      "Designed relational PostgreSQL schemas with structured student and homework data modeling.",
-      "Built CRUD APIs and automated parent notification workflows using WhatsApp integration.",
-      "Generated scheduled academic summary reports using automated backend workflows.",
-      "Focused on scalable backend architecture and structured data management.",
+      "Built a backend-driven academic workflow platform for tracking tasks, student records, and reporting processes.",
+      "Designed relational database structures and automated backend workflows for structured record management.",
+      "Created reporting features that support academic operations with reliable data handling and scalable APIs.",
     ],
 
     link: [
@@ -140,7 +172,7 @@ const projects = [
   {
     name: "ArticleHub – News Aggregation Platform",
 
-    type: "Data Aggregation & Filtering System",
+    type: "Data Aggregation & Automation",
 
     category: ["data", "backend", "automation"],
 
@@ -149,11 +181,9 @@ const projects = [
     date: "2026-02-20",
 
     summary: [
-      "Built a news aggregation platform that fetches and processes data from external news APIs.",
-      "Implemented automated article ingestion, filtering, deduplication, and metadata extraction workflows.",
-      "Designed advanced multi-filter querying for category, country, author, and date-based analysis.",
-      "Optimized MongoDB schema structures and indexing for high-performance read-heavy operations.",
-      "Created scalable REST APIs with pagination and structured response handling.",
+      "Built a data aggregation platform that fetches and processes content from external APIs with structured filtering.",
+      "Implemented automated ingestion, deduplication, and metadata workflows for reliable content delivery.",
+      "Developed scalable APIs and query logic that support filtered, searchable, and organized data access.",
     ],
 
     link: [
@@ -173,7 +203,7 @@ const projects = [
   {
     name: "M-Manager",
 
-    type: "Inventory & Transaction Management",
+    type: "Inventory & Operations Platform",
 
     category: ["analytics", "software"],
 
@@ -182,11 +212,9 @@ const projects = [
     date: "2025-07-19",
 
     summary: [
-      "Business-focused inventory and transaction management system supporting 1000+ transactions.",
-      "Implemented inventory tracking, invoice generation, and real-time stock monitoring workflows.",
-      "Designed structured Firestore collections for scalable business transaction management.",
-      "Built advanced filtering systems for transaction lookup, payment tracking, and reporting.",
-      "Created dashboard interfaces displaying business summaries and operational insights.",
+      "Built a business-focused inventory and transaction management system supporting 1000+ operational records.",
+      "Delivered a practical web application with dashboard views, invoice generation, and transaction tracking.",
+      "Combined frontend usability with structured data handling to support business reliability and day-to-day operations.",
     ],
 
     link: [

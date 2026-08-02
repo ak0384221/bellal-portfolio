@@ -4,7 +4,9 @@ import Projects from "./Projects";
 export default function ProjectsSection({ projects }) {
   return (
     <section className="space-y-5">
-      <Heading textSize="2xl">Projects that define my dev journey</Heading>
+      <Heading textSize="2xl">
+        Projects that reflect my multi-role journey
+      </Heading>
 
       <div className="space-y-4">
         {projects.map((project, id) => (

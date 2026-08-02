@@ -13,55 +13,54 @@ export default function HeroSection() {
         {/* Main Heading */}
         <div className="max-w-4xl">
           <h2 className="text-3xl md:text-5xl font-black leading-tight text-white">
-            Building Systems That Turn
+            Experience Across
             <span className="block md:inline bg-gradient-to-r from-cyan-400 via-blue-400 to-violet-400 bg-clip-text text-transparent ml-0 md:ml-2">
-              Raw Data Into Business Intelligence
+              Software, Data, and Infrastructure
             </span>
           </h2>
 
           <Paragraph className="mt-6 md:mt-8">
-            I specialize in building end-to-end data solutions by combining{" "}
-            <span className="text-cyan-300 font-semibold">Data Analytics</span>,{" "}
-            <span className="text-violet-300 font-semibold">
-              Data Engineering (ETL Pipelines)
+            I have worked across{" "}
+            <span className="text-cyan-300 font-semibold">
+              Software Development
             </span>
+            ,{" "}
+            <span className="text-violet-300 font-semibold">Data Analysis</span>
             , and{" "}
             <span className="text-yellow-300 font-semibold">
-              Busness Intelligence
+              Linux Systems Administration
             </span>
-            . I design and implement scalable data systems, robust
-            transformation pipelines, and interactive dashboards that turn raw
-            data into actionable business intelligence. My focus is on
-            delivering clean, reliable datasets and performance-driven analytics
-            solutions using SQL, modern data architectures, and data engineering
-            best practices.
+            . My background includes building web applications, designing
+            SQL-based reporting and ETL workflows, and supporting secure Linux
+            environments with hands-on experience in networking, hardening, and
+            system reliability.
           </Paragraph>
         </div>
 
         {/* Skill Pills */}
         <div className="mt-8 flex flex-wrap gap-3">
-          <SkillPill text="SQL & Data Warehousing" accentColor="cyan" />
-          <SkillPill text="ETL Pipelines" accentColor="violet" />
-          <SkillPill text="Dashboard & KPI Systems" accentColor="yellow" />
-          <SkillPill text="Data Modeling" accentColor="emerald" />
+          <SkillPill text="Full-Stack Development" accentColor="cyan" />
+          <SkillPill text="Linux Administration" accentColor="violet" />
+          <SkillPill text="Data Analytics & BI" accentColor="yellow" />
+          <SkillPill text="System Security" accentColor="emerald" />
         </div>
 
         {/* Hero Cards Grid */}
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           <HeroCard
-            label="Focus"
-            title="Data Engineering"
-            description="Building structured pipelines and scalable warehouse systems."
+            label="Experience"
+            title="Across Sectors"
+            description="Applying software, data, and systems knowledge in real projects."
           />
           <HeroCard
             label="Analytics"
-            title="KPI & Insights"
-            description="Transforming datasets into business-focused reporting systems."
+            title="SQL • BI • KPIs"
+            description="Turning raw information into dashboards, insights, and reporting workflows."
           />
           <HeroCard
             label="Stack"
-            title="SQL • Power BI • Excel • Power Query"
-            description="Combining analytics, Business Intelligence, and modern web technologies For Process automation."
+            title="React • Node • Linux • SQL"
+            description="Combining development, automation, and systems knowledge for practical solutions."
           />
         </div>
       </div>

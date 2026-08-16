@@ -3,15 +3,14 @@ import Paragraph from "@/app/(home)/atomic-Component/paragraph";
 
 export default function AboutSection() {
   return (
-    <section className="space-y-4 my-8">
+    <section className="space-y-4 my-8 rounded-2xl border border-lime-500/10 bg-[#0d0f0d] p-5">
       <Heading>About Me</Heading>
-      <Paragraph>
-        I bring hands-on experience across software development, data analysis,
-        and Linux systems administration. He has worked on web applications,
-        data workflows and dashboards, and secure infrastructure operations.
-        From backend services and REST APIs to SQL-driven reporting and Linux
-        server hardening, his work reflects practical experience across
-        technical and business-focused environments.
+      <Paragraph className="text-slate-300">
+        I am an aspiring System Engineer with a strong focus on Linux system
+        administration, enterprise storage operations, and security
+        fundamentals. My hands-on learning has centered on user and permission
+        management, LVM configuration, firewall hardening, SSH lockdown, and
+        reliable troubleshooting in Linux environments.
       </Paragraph>
     </section>
   );

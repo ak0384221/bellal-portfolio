@@ -1,125 +1,95 @@
 const frontendTech = {
-  softwareDevelopment: [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React.js",
-    "Next.js",
-    "Node.js",
-    "Express.js",
-    "REST APIs",
-    "Python (Basic)",
-    "Bash Scripting",
-  ],
-
-  dataAnalytics: [
-    "SQL",
-    "ETL Pipelines",
-    "Data Modeling",
-    "Medallion Architecture",
-    "Star Schema Design",
-    "EDA",
-    "KPI Tracking",
-    "Trend Analysis",
-    "Business Reporting",
-  ],
-
   systemAdministration: [
-    "Linux (RHEL/CentOS/Ubuntu/Debian)",
-    "Windows",
+    "Linux (RHEL/CentOS, Ubuntu/Debian)",
     "User & Group Management",
     "File Permissions & ACLs",
     "Disk Management & LVM",
     "Boot Process & System Logging",
+    "Package Management (RPM, DNF, APT)",
   ],
 
   systemSecurity: [
     "SSH Hardening",
-    "GRUB Security",
-    "Password Policy Enforcement",
     "sudo/visudo Privilege Management",
-    "File Integrity Monitoring (AIDE)",
-    "Malware & Rootkit Scanning",
+    "Password Policy & Account Lockout",
+    "GRUB Protection",
+    "Rootkit/Malware Scanning",
     "Full Disk Encryption (LUKS/dm-crypt)",
   ],
 
   networkingAndFirewall: [
     "TCP/IP, DNS, Subnetting",
-    "iptables (Stateful Firewalls)",
-    "Network Scanning (Nmap)",
+    "iptables Firewall",
+    "Nmap Scanning",
     "Firewall Rules & Logging",
+    "SSH Access Control",
   ],
 
-  databases: ["SQL Server", "PostgreSQL", "MongoDB", "Database Design"],
-
-  businessIntelligence: [
-    "Power BI",
-    "Excel Dashboards",
-    "Power Query",
-    "Interactive Reports",
+  storageAndBackup: [
+    "Logical Volume Management",
+    "Filesystem Configuration (ext4/XFS)",
+    "Fstab Mount Management",
+    "Disk Partitioning",
+    "Server Backup Fundamentals",
+    "Space & Disk Usage Monitoring",
   ],
 
-  tools: [
-    "Git",
-    "GitHub",
-    "Postman",
-    "SSH",
-    "AIDE",
-    "John the Ripper",
-    "Vercel",
-    "Railway",
+  scriptingAndTools: [
+    "Bash Scripting",
+    "Git & GitHub",
+    "SSH & Key Management",
+    "journalctl & Log Review",
+    "System Monitoring",
+    "rkhunter & ClamAV",
   ],
 };
 
 const projects = [
   {
-    name: "Modern Data Warehouse Project",
+    name: "Storage & LVM Management Lab",
 
-    type: "Data Engineering & Analytics",
+    type: "Linux Storage Administration",
 
-    category: ["data", "etl", "analytics"],
+    category: ["linux", "storage", "lvm"],
 
-    tech: [
-      "SQL Server",
-      "ETL Pipelines",
-      "Data Modeling",
-      "Star Schema",
-      "SQL",
-    ],
+    tech: ["RHEL", "LVM", "ext4", "XFS", "df", "lsblk", "vgs", "lvs"],
 
     featured: true,
 
     date: "2026-05-10",
 
     summary: [
-      "Built a modern data warehouse in SQL Server using Medallion Architecture for reliable analytics workflows.",
-      "Processed and transformed large business datasets with a focus on data quality, consistency, and reporting readiness.",
-      "Developed end-to-end ETL pipelines for ingestion, cleansing, standardization, and transformation.",
-      "Designed star-schema models that support reporting, KPI tracking, and analytical scalability.",
+      "Designed and managed disk partitions, created physical volumes, and configured logical volumes on Linux servers.",
+      "Performed live resizing of logical volumes and configured filesystems with persistent mounts through /etc/fstab.",
+      "Extended volume groups by adding new physical volumes and grew logical volumes without disrupting service.",
+      "Verified storage health and disk usage using df, lsblk, vgs, and lvs to support reliable system operations.",
     ],
 
     link: [
       {
-        name: "GitHub",
-        url: "https://github.com/ak0384221/sql-data-warehouse-project",
+        name: "Lab Overview",
+        url: "#",
       },
     ],
 
-    status: "finished & active",
+    status: "completed",
   },
 
   {
-    name: "Production, Sales & Operations Analysis Dashboard",
+    name: "Linux User, Group & Permission Control Lab",
 
-    type: "Analytics & BI Reporting",
+    type: "Access Control & Hardening",
 
-    category: ["data", "analytics", "dashboard"],
+    category: ["linux", "security", "permissions"],
 
     tech: [
-      "Microsoft Excel",
-      "Pivot Tables",
-      "Charts",
-      "Slicers",
-      "Data Analysis",
+      "useradd",
+      "usermod",
+      "chage",
+      "passwd",
+      "setfacl",
+      "getfacl",
+      "sudo",
     ],
 
     featured: true,
@@ -127,108 +97,104 @@ const projects = [
     date: "2026-04-25",
 
     summary: [
-      "Analyzed sales and production data to highlight operational performance, revenue trends, and quality gaps.",
-      "Built KPI-focused dashboards for on-time delivery, sales movement, defect rates, and top-performing products.",
-      "Used Excel and business reporting techniques to create a practical decision-support interface for stakeholders.",
+      "Configured user accounts, groups, and sudo privileges to enforce secure, least-privilege access across systems.",
+      "Managed account lifecycle with password aging, account locking, and expiration policies for operational control.",
+      "Implemented SUID, SGID, and Sticky Bit policies to protect system binaries and shared directories.",
+      "Used ACLs to grant fine-grained access for multi-user collaboration while preserving access boundaries.",
     ],
 
     link: [
       {
-        name: "GitHub",
-        url: "https://github.com/ak0384221/production-sales-analysis",
+        name: "Lab Overview",
+        url: "#",
       },
     ],
 
-    status: "finished & active",
+    status: "completed",
   },
 
   {
-    name: "StudentDiary – Academic Task & Reporting System",
+    name: "SSH & Access Hardening Lab",
 
-    type: "Backend & Data Management",
+    type: "Linux Security",
 
-    category: ["software", "analytics"],
+    category: ["linux", "security", "networking"],
 
-    tech: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM"],
+    tech: ["SSH", "iptables", "fail2ban", "journalctl", "key-based auth"],
 
     date: "2026-02-24",
 
     summary: [
-      "Built a backend-driven academic workflow platform for tracking tasks, student records, and reporting processes.",
-      "Designed relational database structures and automated backend workflows for structured record management.",
-      "Created reporting features that support academic operations with reliable data handling and scalable APIs.",
+      "Hardened SSH access by changing the default port, disabling password authentication, and enforcing key-based logins.",
+      "Configured brute-force protection and firewall rules to restrict access to approved source addresses only.",
+      "Disabled unnecessary authentication methods and tightened protocol settings to lower the server attack surface.",
+      "Reviewed authentication logs through journalctl and /var/log/auth.log to validate the security controls in use.",
     ],
 
     link: [
       {
-        name: "Backend GitHub",
-        url: "https://github.com/ak0384221/studentDiary_backend",
+        name: "Lab Overview",
+        url: "#",
       },
     ],
 
-    status: "ongoing & active",
+    status: "completed",
   },
 
   {
-    name: "ArticleHub – News Aggregation Platform",
+    name: "Server Package & Log Management Lab",
 
-    type: "Data Aggregation & Automation",
+    type: "System Operations",
 
-    category: ["data", "backend", "automation"],
+    category: ["linux", "monitoring", "operations"],
 
-    tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Mongoose"],
+    tech: ["DNF", "APT", "yum", "journalctl", "logrotate", "systemd"],
 
     date: "2026-02-20",
 
     summary: [
-      "Built a data aggregation platform that fetches and processes content from external APIs with structured filtering.",
-      "Implemented automated ingestion, deduplication, and metadata workflows for reliable content delivery.",
-      "Developed scalable APIs and query logic that support filtered, searchable, and organized data access.",
+      "Managed package installation, updates, and removals in local Linux server environments using DNF and APT workflows.",
+      "Monitored system health, service status, and troubleshooting logs to support stability and service continuity.",
+      "Configured log rotation to manage disk usage and retain historical logs for auditing and inspection.",
+      "Applied practical operational habits for service monitoring, maintenance, and reliable day-to-day server administration.",
     ],
 
     link: [
       {
-        name: "Frontend GitHub",
-        url: "https://github.com/ak0384221/ArticleHub-Frontend",
-      },
-      {
-        name: "Backend GitHub",
-        url: "https://github.com/ak0384221/ArticleHub-Backend",
+        name: "Lab Overview",
+        url: "#",
       },
     ],
 
-    status: "active",
+    status: "completed",
   },
 
   {
-    name: "M-Manager",
+    name: "RHCSA Preparation & Linux Fundamentals",
 
-    type: "Inventory & Operations Platform",
+    type: "Enterprise Linux Training",
 
-    category: ["analytics", "software"],
+    category: ["linux", "certification", "basics"],
 
-    tech: ["React.js", "Firebase", "Tailwind CSS"],
+    tech: ["RHCSA", "RHEL", "Linux Security", "Networking", "Bash"],
 
     date: "2025-07-19",
 
     summary: [
-      "Built a business-focused inventory and transaction management system supporting 1000+ operational records.",
-      "Delivered a practical web application with dashboard views, invoice generation, and transaction tracking.",
-      "Combined frontend usability with structured data handling to support business reliability and day-to-day operations.",
+      "Built a focused RHCSA preparation workflow centered on enterprise Linux administration, storage, security, and service management.",
+      "Practiced core system tasks including package management, user control, LVM operations, and system troubleshooting.",
+      "Applied practical study and lab work to reinforce configuration, access control, and operational knowledge for real environments.",
+      "Strengthened understanding of Linux fundamentals through hands-on tasks aligned with enterprise administration practices.",
     ],
 
     link: [
       {
-        name: "GitHub",
-        url: "https://github.com/ak0384221/MerchandiseManager",
-      },
-      {
-        name: "Live",
-        url: "https://m-manager-258fb.web.app/",
+        name: "Certification Path",
+        url: "#",
       },
     ],
 
-    status: "finished & active",
+    status: "in progress",
   },
 ];
 

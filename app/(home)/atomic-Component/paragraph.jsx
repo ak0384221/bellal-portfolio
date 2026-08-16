@@ -1,9 +1,9 @@
-import { inter } from "@/app/layout";
+import { ubuntuMono } from "@/app/layout";
 
 export default function Paragraph({ children, className = "" }) {
   return (
     <p
-      className={`${inter.className} font-light  text-sm leading-relaxed text-slate-300 tracking-wide ${className}`}
+      className={`${ubuntuMono.className} font-light text-sm leading-relaxed text-slate-300 tracking-[0.02em] ${className}`}
     >
       {children}
     </p>

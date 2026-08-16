@@ -17,7 +17,7 @@ export default function Heading({
 }) {
   return (
     <h2
-      className={`${sizeMap[textSize]} font-bold text-left capitalize text-white ${saira.className} ${className}`}
+      className={`${sizeMap[textSize]} font-bold text-left capitalize text-[#edf6ee] tracking-[-0.04em] ${saira.className} ${className}`}
     >
       {children}
     </h2>

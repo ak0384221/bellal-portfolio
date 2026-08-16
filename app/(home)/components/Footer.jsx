@@ -3,7 +3,7 @@ import ContactLink from "./ContactLink";
 
 export default function Footer({ contacts }) {
   return (
-    <footer className="border-t border-white/10 pt-8 mt-12">
+    <footer className="border-t border-lime-500/10 pt-8 mt-12">
       <Heading textSize="2xl">Reach me here</Heading>
 
       <div className="mt-6  flex justify-start items-center px-2 gap-3">

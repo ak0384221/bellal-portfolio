@@ -6,11 +6,11 @@ export default function TechMaker({ category, items }) {
       className="
         group relative p-4
         rounded-lg
-        border border-neutral-700/50
-        bg-gradient-to-br from-neutral-900/50 to-neutral-950/50
+        border border-red-500/10
+        bg-[#140f0d]
         cursor-pointer
         break-inside-avoid
-        hover:border-cyan-500/40 hover:bg-neutral-900/80
+        hover:border-red-500/20 hover:bg-[#1a1211]
         transition-all duration-300
         backdrop-blur-sm
       "
@@ -20,7 +20,7 @@ export default function TechMaker({ category, items }) {
 
       {/* Category Title */}
       <h3
-        className={`text-base text-white mb-3 capitalize font-bold ${ubuntu.className}`}
+        className={`text-base text-[#edf6ee] mb-3 capitalize font-bold tracking-[-0.03em] ${ubuntu.className}`}
       >
         {category
           .replace(/([A-Z])/g, " $1")

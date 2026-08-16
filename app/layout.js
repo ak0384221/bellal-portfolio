@@ -6,9 +6,9 @@ export const inter = Inter({
   subsets: ["latin"], // choose subset
   weight: ["200", "300", "400", "500", "700"], // optional: specify weights you need
 });
-export const saira = Saira({
-  subsets: ["latin"], // choose subset
-  weight: ["200", "300", "400", "500", "700"], // optional: specify weights you need
+export const saira = Ubuntu({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export const roboto = Roboto({
@@ -32,7 +32,11 @@ export const ubuntuMono = Ubuntu_Mono({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-[#090909] text-[#f4efe9] antialiased">
+        <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(204,70,27,0.16),_transparent_20%),radial-gradient(circle_at_top_right,_rgba(153,27,27,0.12),_transparent_25%),linear-gradient(180deg,#090909_0%,#111111_28%,#0b0b0b_100%)]">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

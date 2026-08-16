@@ -5,7 +5,7 @@ export default function ProjectsSection({ projects }) {
   return (
     <section className="space-y-5">
       <Heading textSize="2xl">
-        Projects that reflect my multi-role journey
+        Hands-on Linux and system administration labs
       </Heading>
 
       <div className="space-y-4">

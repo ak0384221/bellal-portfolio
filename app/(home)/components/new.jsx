@@ -1,30 +1,32 @@
+import { ubuntu, ubuntuMono } from "@/app/layout";
+
 export default function DataWorkflow() {
   const steps = [
     {
-      title: "Develop & Deliver",
-      subtitle: "Software Solutions",
-      desc: "Build web applications, APIs, and backend systems using JavaScript, React, Node.js, and modern development practices.",
-      icon: "💻",
-      tag: "DEV",
+      title: "Manage & Secure",
+      subtitle: "Linux Access Control",
+      desc: "Create and maintain users, groups, sudo privileges, password policy enforcement, and least-privilege access controls for safer systems.",
+      icon: "🔐",
+      tag: "IAM",
     },
     {
-      title: "Analyze & Model",
-      subtitle: "Data & Insights",
-      desc: "Turn business data into structured reporting, dashboards, ETL workflows, and KPI-driven insights using SQL and analytics techniques.",
-      icon: "📊",
-      tag: "DATA",
+      title: "Store & Scale",
+      subtitle: "LVM & Filesystems",
+      desc: "Configure partitions, extend volume groups, resize logical volumes, and manage persistent mounts to keep storage reliable and scalable.",
+      icon: "💾",
+      tag: "STORAGE",
     },
     {
-      title: "Secure & Operate",
-      subtitle: "Linux Infrastructure",
-      desc: "Manage users, permissions, filesystems, networking, firewalls, and hardening tasks to keep systems safe and reliable.",
+      title: "Protect & Monitor",
+      subtitle: "SSH & Network Hardening",
+      desc: "Harden SSH, apply firewall rules, monitor logs, and reduce attack surface through practical Linux security controls.",
       icon: "🛡️",
-      tag: "SYS",
+      tag: "SEC",
     },
     {
-      title: "Improve & Scale",
-      subtitle: "Reliable Operations",
-      desc: "Focus on automation, monitoring, maintainability, and performance so development, analytics, and infrastructure work together seamlessly.",
+      title: "Operate & Troubleshoot",
+      subtitle: "System Reliability",
+      desc: "Use package management, log review, service monitoring, and troubleshooting workflows to keep Linux servers stable and production-ready.",
       icon: "⚙️",
       tag: "OPS",
     },
@@ -33,12 +35,16 @@ export default function DataWorkflow() {
   return (
     <section className="w-full max-w-5xl mx-auto px-4 py-10">
       {/* Header */}
-      <h2 className="text-2xl font-bold text-white mb-2">
-        ⚡ Experience across domains
+      <h2
+        className={`${ubuntu.className} text-2xl font-bold text-[#edf6ee] mb-2 tracking-[-0.04em]`}
+      >
+        ⚡ Linux operations focus
       </h2>
-      <p className="text-neutral-400 text-sm mb-10 max-w-2xl">
-        A practical blend of development, data, and systems work shaped by real
-        projects and hands-on experience across multiple technical areas.
+      <p
+        className={`${ubuntuMono.className} text-slate-400 text-sm mb-10 max-w-2xl leading-relaxed`}
+      >
+        Hands-on experience across Linux administration, storage, security, and
+        system support built through structured labs and RHCSA-focused practice.
       </p>
 
       {/* Timeline */}
@@ -46,15 +52,15 @@ export default function DataWorkflow() {
         {steps.map((step, idx) => (
           <div key={idx} className="relative group">
             {/* Node */}
-            <div className="absolute -left-[34px] top-2 w-4 h-4 rounded-full border border-neutral-600 bg-black group-hover:border-emerald-400 transition" />
+            <div className="absolute -left-[34px] top-2 w-4 h-4 rounded-full border border-lime-500/40 bg-[#0b120d] group-hover:border-lime-300 transition" />
 
             {/* Card */}
             <div
               className="
                 p-4 rounded-lg
-                border border-neutral-800
-                bg-neutral-950/40
-                hover:border-emerald-500/40
+                border border-lime-500/10
+                bg-[#0d1713]
+                hover:border-lime-500/25
                 transition
                 flex flex-col md:flex-row md:justify-between md:items-start
                 gap-3

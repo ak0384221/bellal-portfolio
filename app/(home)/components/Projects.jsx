@@ -1,29 +1,39 @@
+import { ubuntu, ubuntuMono } from "@/app/layout";
+
 export default function Projects({ project }) {
   return (
     <article
       className="
         mb-6 p-5 rounded-xl
-        border border-neutral-700/50
-        bg-gradient-to-br from-neutral-900/40 to-neutral-950/40
-        hover:bg-neutral-900/60
-        hover:border-emerald-500/40
+        border border-red-500/10
+        bg-[#130f0d]
+        hover:bg-[#1b1412]
+        hover:border-red-500/20
         transition-all duration-300
         backdrop-blur-sm
       "
     >
-      <div className="absolute bottom-0 right-0 h-52 w-52 rounded-full bg-cyan-500/10 blur-2xl pointer-events-none" />
+      <div className="absolute bottom-0 right-0 h-52 w-52 rounded-full bg-red-500/10 blur-2xl pointer-events-none" />
       <div className="flex items-start justify-between gap-4 mb-3">
-        <h3 className="text-lg font-bold text-white flex-1">{project.name}</h3>
-        <span className="text-xs px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-medium flex-shrink-0">
+        <h3
+          className={`${ubuntu.className} text-lg font-bold text-[#f8f1ed] flex-1 tracking-[-0.03em]`}
+        >
+          {project.name}
+        </h3>
+        <span className="text-[10px] px-3 py-1 rounded-full bg-red-500/10 text-red-300 border border-red-500/20 font-medium flex-shrink-0 uppercase tracking-[0.08em]">
           {project.status}
         </span>
       </div>
 
-      <p className="text-sm text-slate-400 mb-3">
+      <p
+        className={`${ubuntuMono.className} text-xs uppercase tracking-[0.08em] text-slate-400 mb-3`}
+      >
         {project.type} • {project.date}
       </p>
 
-      <ul className="list-disc list-inside space-y-1.5 mb-4">
+      <ul
+        className={`list-disc list-inside space-y-1.5 mb-4 ${ubuntuMono.className}`}
+      >
         {project.summary.map((point, index) => (
           <li key={index} className="text-sm text-slate-300 leading-relaxed">
             {point}
@@ -31,7 +41,7 @@ export default function Projects({ project }) {
         ))}
       </ul>
 
-      <p className="text-sm text-slate-400 mb-4">
+      <p className={`${ubuntuMono.className} text-sm text-slate-400 mb-4`}>
         <span className="text-slate-300">Tech Stack:</span>{" "}
         {project.tech.join(", ")}
       </p>
@@ -48,9 +58,9 @@ export default function Projects({ project }) {
               border border-neutral-600
               text-slate-200
               bg-neutral-800/40
-              hover:bg-emerald-500/10
-              hover:border-emerald-400
-              hover:text-emerald-300
+              hover:bg-red-500/10
+              hover:border-red-400
+              hover:text-red-200
               transition-all duration-200
               font-medium
             "

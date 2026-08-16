@@ -1,27 +1,27 @@
 // Centralized color scheme for consistency
 export const colors = {
   primary: {
-    bg: "bg-slate-950",
-    border: "border-white/10",
-    text: "text-white",
+    bg: "bg-[#0b120d]",
+    border: "border-lime-500/10",
+    text: "text-[#edf6ee]",
   },
   secondary: {
-    bg: "bg-slate-900/50",
-    border: "border-white/5",
+    bg: "bg-[#101d18]",
+    border: "border-lime-500/10",
     text: "text-slate-200",
   },
   accent: {
     cyan: {
-      text: "text-cyan-300",
-      border: "border-cyan-500/30",
-      bg: "bg-cyan-500/10",
-      glow: "shadow-cyan-500/20",
+      text: "text-lime-300",
+      border: "border-lime-500/30",
+      bg: "bg-lime-500/10",
+      glow: "shadow-lime-500/20",
     },
     violet: {
-      text: "text-violet-300",
-      border: "border-violet-500/30",
-      bg: "bg-violet-500/10",
-      glow: "shadow-violet-500/20",
+      text: "text-amber-300",
+      border: "border-amber-500/30",
+      bg: "bg-amber-500/10",
+      glow: "shadow-amber-500/20",
     },
     emerald: {
       text: "text-emerald-300",
@@ -42,22 +42,22 @@ export const colors = {
       glow: "shadow-orange-500/20",
     },
     pink: {
-      text: "text-pink-300",
-      border: "border-pink-500/30",
-      bg: "bg-pink-500/10",
-      glow: "shadow-pink-500/20",
+      text: "text-rose-300",
+      border: "border-rose-500/30",
+      bg: "bg-rose-500/10",
+      glow: "shadow-rose-500/20",
     },
   },
   muted: {
     text: "text-slate-400",
     lightText: "text-slate-300",
-    border: "border-neutral-700/50",
+    border: "border-lime-500/10",
   },
   semantic: {
     success: "text-emerald-400",
     warning: "text-yellow-400",
     error: "text-red-400",
-    info: "text-cyan-400",
+    info: "text-lime-400",
   },
 };
 

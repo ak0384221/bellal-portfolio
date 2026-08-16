@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-[#090909] text-[#f4efe9] antialiased">
-        <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(204,70,27,0.16),_transparent_20%),radial-gradient(circle_at_top_right,_rgba(153,27,27,0.12),_transparent_25%),linear-gradient(180deg,#090909_0%,#111111_28%,#0b0b0b_100%)]">
+        <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(204,70,27,0.16),_transparent_50%),radial-gradient(circle_at_top_right,_rgba(153,27,27,0.12),_transparent_45%),linear-gradient(180deg,#090909_0%,#111111_78%,#0b0b0b_100%)]">
           {children}
         </div>
       </body>

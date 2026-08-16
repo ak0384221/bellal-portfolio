@@ -18,8 +18,7 @@ export default function Header() {
         </h1>
         {/* Badge */}
         <div className="my-2 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/5 px-4 py-2 text-[11px] text-orange-300 uppercase tracking-[0.12em]">
-          <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
-          Aspiring System Engineer • Linux Administrator
+          Aspiring System Engineer • Linux Admin
         </div>
       </div>
     </header>

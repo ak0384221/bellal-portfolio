@@ -17,7 +17,10 @@ export default function Home() {
         {/* Hero Section */}
         <HeroSection />
         {/* About Section */}
-        <AboutSection />
+        {/* <AboutSection /> */}
+        <br />
+        <br />
+        <br />
 
         {/* Tech Stack Section */}
         <TechSection frontendTech={frontendTech} />

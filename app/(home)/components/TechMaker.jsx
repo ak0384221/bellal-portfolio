@@ -4,13 +4,12 @@ export default function TechMaker({ category, items }) {
   return (
     <div
       className="
-        group relative p-4
+        group relative p-2
         rounded-lg
-        border border-red-500/10
-        bg-[#140f0d]
+        border border-red-500/30
+        bg-[#000000]
         cursor-pointer
         break-inside-avoid
-        hover:border-red-500/20 hover:bg-[#1a1211]
         transition-all duration-300
         backdrop-blur-sm
       "
@@ -28,7 +27,7 @@ export default function TechMaker({ category, items }) {
       </h3>
 
       {/* Items List */}
-      <ul className="ml-2 list-disc list-inside space-y-1.5 text-sm">
+      <ul className="ml-1 list-disc list-inside space-y-1.5 text-sm">
         {items.map((item) => (
           <li
             key={item}

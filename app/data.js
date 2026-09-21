@@ -1,50 +1,117 @@
 const frontendTech = {
-  systemAdministration: [
+  devopsCore: [
+    "Docker",
+    "Docker Compose",
+    "CI/CD",
+    "GitHub Actions",
+    "Git",
+    "GitHub",
+    "YAML Pipelines",
+    "Containerization",
+  ],
+
+  cloudAndDeployment: [
+    "AWS EC2",
+    "AWS Fundamentals",
+    "Cloud Deployment Basics",
+    "Docker Hub",
+    "Render Deployment",
+    "Container Registry",
+    "Environment Configuration",
+  ],
+
+  linuxAndSystems: [
     "Linux (RHEL/CentOS, Ubuntu/Debian)",
     "User & Group Management",
     "File Permissions & ACLs",
     "Disk Management & LVM",
     "Boot Process & System Logging",
     "Package Management (RPM, DNF, APT)",
-  ],
-
-  systemSecurity: [
+    "Service Management & Troubleshooting",
     "SSH Hardening",
-    "sudo/visudo Privilege Management",
-    "Password Policy & Account Lockout",
-    "GRUB Protection",
-    "Rootkit/Malware Scanning",
-    "Full Disk Encryption (LUKS/dm-crypt)",
   ],
 
-  networkingAndFirewall: [
-    "TCP/IP, DNS, Subnetting",
-    "iptables Firewall",
-    "Nmap Scanning",
-    "Firewall Rules & Logging",
-    "SSH Access Control",
+  securityAndNetworking: [
+    "Firewall (iptables)",
+    "SSH Hardening",
+    "Nmap",
+    "TCP/IP",
+    "DNS",
+    "Network Troubleshooting",
+    "Least-Privilege Access",
+    "fail2ban",
   ],
 
-  storageAndBackup: [
-    "Logical Volume Management",
-    "Filesystem Configuration (ext4/XFS)",
-    "Fstab Mount Management",
-    "Disk Partitioning",
-    "Server Backup Fundamentals",
-    "Space & Disk Usage Monitoring",
-  ],
-
-  scriptingAndTools: [
-    "Bash Scripting",
-    "Git & GitHub",
-    "SSH & Key Management",
-    "journalctl & Log Review",
-    "System Monitoring",
-    "rkhunter & ClamAV",
+  fullstackSupport: [
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "Next.js",
+    "REST APIs",
+    "MongoDB",
+    "PostgreSQL",
+    "Redis",
+    "Authentication & Authorization",
+    "Frontend Deployment",
+    "Backend Integration",
   ],
 };
 
 const projects = [
+  {
+    name: "YourStore -- Full-Stack Project with Docker & CI/CD Pipeline",
+
+    type: "Full-Stack & DevOps",
+
+    category: ["ecommerce", "devops", "docker", "ci-cd"],
+
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "Docker",
+      "GitHub Actions",
+      "Render",
+    ],
+
+    featured: true,
+
+    date: "2026-06-12",
+
+    summary: [
+      "Built a full-stack e-commerce app and added the DevOps workflow around it: containerization, CI/CD, and cloud deployment.",
+      "Containerized the frontend and backend with Docker, using separate internal and public API endpoints for Next.js SSG/ISR scenarios.",
+      "Built a multi-job GitHub Actions CI/CD pipeline with linting, testing, Docker image build and push to Docker Hub, and deployment to Render.",
+      "Troubleshot production issues such as 502 host binding errors and CORS failures, and documented the setup and fixes in a DevOps journal.",
+    ],
+
+    link: [
+      {
+        name: "Frontend Repo",
+        url: "https://github.com/ak0384221/Yourstore-frontend",
+      },
+      {
+        name: "Backend Repo",
+        url: "https://github.com/ak0384221/Yourstore-backend",
+      },
+      {
+        name: "Frontend Image",
+        url: "https://hub.docker.com/repository/docker/ak0384221/yourstore-frontend/general",
+      },
+      {
+        name: "Backend Image",
+        url: "https://hub.docker.com/repository/docker/ak0384221/articlehub-backend/general",
+      },
+      {
+        name: "DevOps Journal",
+        url: "https://github.com/ak0384221/docker-yourstore-journal/blob/main/yourstore-journal.md",
+      },
+    ],
+
+    status: "completed",
+  },
+
   {
     name: "Storage & LVM Management Lab",
 
@@ -198,6 +265,72 @@ const projects = [
   },
 ];
 
+const certificates = [
+  {
+    name: "Linux Essentials",
+    provider: "Cisco NetAcad",
+    status: "Completed",
+    year: "2025",
+    link: "https://drive.google.com/file/d/1-6Cg4mQ5EY3BNlW3trvvBvRpdUpBKrlV/view?usp=drive_link",
+  },
+  {
+    name: "Linux Administration Bootcamp: Beginner to Advanced",
+    provider: "Udemy",
+    status: "Completed",
+    year: "2025",
+    link: "#",
+  },
+  {
+    name: "Network Addressing & Basic Troubleshooting",
+    provider: "Cisco NetAcad",
+    status: "Completed",
+    year: "2025",
+    link: "https://drive.google.com/file/d/14IPEbCp1479DOSWapTZBxzcA_CNF_5x0/view?usp=drive_link",
+  },
+  {
+    name: "Docker for Absolute Beginners",
+    provider: "KodeKloud",
+    status: "Completed",
+    year: "2025",
+    link: "https://learn.kodekloud.com/learn/certificate/2e5c121a-9e88-4a10-a135-1f9a3a7ecc8d",
+  },
+  {
+    name: "Docker & Kubernetes: The Practical Guide",
+    provider: "Udemy",
+    status: "Completed",
+    year: "2025",
+    link: "#",
+  },
+  {
+    name: "SQL (Advanced)",
+    provider: "HackerRank",
+    status: "Completed",
+    year: "2025",
+    link: "https://www.hackerrank.com/certificates/fee51e440bb6",
+  },
+  {
+    name: "REST API (Intermediate)",
+    provider: "HackerRank",
+    status: "Completed",
+    year: "2025",
+    link: "https://www.hackerrank.com/certificates/e99f81bcad91",
+  },
+  {
+    name: "Node.js",
+    provider: "HackerRank",
+    status: "Completed",
+    year: "2025",
+    link: "https://www.hackerrank.com/certificates/ae2f49759238",
+  },
+  {
+    name: "Frontend Developer (React)",
+    provider: "HackerRank",
+    status: "Completed",
+    year: "2025",
+    link: "https://www.hackerrank.com/certificates/e32b77d945ec",
+  },
+];
+
 const contacts = [
   {
     platform: "LinkedIn",
@@ -219,4 +352,4 @@ const contacts = [
   },
 ];
 
-export { frontendTech, projects, contacts };
+export { frontendTech, projects, certificates, contacts };

@@ -32,8 +32,8 @@ export default function DataWorkflow() {
     },
     {
       title: "Operate in Cloud",
-      subtitle: "AWS Basics, Deployments, Environments",
-      desc: "Work with cloud-hosted environments, deployment configuration, and environment management while expanding AWS knowledge for modern DevOps workflows.",
+      subtitle: "AWS, Terraform, Highly Available Infrastructure",
+      desc: "Build AWS environments with VPC networking, EC2, load balancing, and Auto Scaling, and use Terraform to provision infrastructure as code.",
       icon: "☁️",
       tag: "CLOUD",
     },

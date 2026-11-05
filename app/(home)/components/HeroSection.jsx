@@ -18,7 +18,7 @@ export default function HeroSection() {
           >
             DevOps-first
             <span className="block md:inline text-orange-300 ml-0 md:ml-2">
-              engineer with <br /> Linux & fullstack support
+              engineer with <br /> cloud & full-stack experience
             </span>
           </h2>
 
@@ -28,42 +28,41 @@ export default function HeroSection() {
               Linux administration
             </span>
             {", "}
-            <span className="text-red-300 font-semibold">Docker</span>,{" "}
-            <span className="text-red-300 font-semibold">CI/CD</span>,{" "}
+            <span className="text-red-300 font-semibold">AWS</span>,{" "}
+            <span className="text-orange-300 font-semibold">Terraform</span>,{" "}
+            <span className="text-red-300 font-semibold">Docker</span>, and{" "}
             <span className="text-orange-300 font-semibold">
-              GitHub Actions
+              GitHub Actions CI/CD
             </span>
-            , <span className="text-red-300 font-semibold">Git</span>, and{" "}
-            <span className="text-orange-300 font-semibold">GitHub</span>. I am
-            also strengthening my AWS knowledge while bringing practical
-            experience in full-stack development and secure Linux system
-            operations for deployment-ready environments.
+            . I have built containerized full-stack deployments, practiced
+            highly available AWS architectures, and developed Linux
+            administration and automation skills.
           </Paragraph>
         </div>
 
         <div className="mt-8 flex flex-wrap gap-3">
           <SkillPill text="Linux" accentColor="rose" />
-          <SkillPill text="Git" accentColor="red" />
-          <SkillPill text="CI / CD" accentColor="amber" />
+          <SkillPill text="AWS" accentColor="yellow" />
+          <SkillPill text="Terraform" accentColor="amber" />
           <SkillPill text="Docker" accentColor="orange" />
-          <SkillPill text="AWS " accentColor="yellow" />
+          <SkillPill text="GitHub Actions" accentColor="red" />
         </div>
 
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           <HeroCard
             label="Focus"
-            title="RHEL • Ubuntu • Linux"
-            description="Managing systems, accounts, storage, and secure server operations."
+            title="AWS • Terraform • EC2"
+            description="Building cloud infrastructure with networking, scaling, and availability in mind."
           />
           <HeroCard
-            label="Skills"
-            title="LVM • ACLs • sudo"
-            description="Controlling access, optimizing storage, and strengthening Linux security."
+            label="Systems"
+            title="RHEL • Ubuntu • LVM"
+            description="Managing Linux users, storage, filesystems, and secure server operations."
           />
           <HeroCard
-            label="DevOps"
-            title="Git • Bash • CI/CD"
-            description="Using automation and version control to support dependable Linux operations."
+            label="Delivery"
+            title="Docker • CI/CD • Bash"
+            description="Automating builds and publishing container images for full-stack applications."
           />
         </div>
       </div>

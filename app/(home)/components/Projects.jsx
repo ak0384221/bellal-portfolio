@@ -28,7 +28,8 @@ export default function Projects({ project }) {
       <p
         className={`${ubuntuMono.className} text-xs uppercase tracking-[0.08em] text-slate-400 mb-3`}
       >
-        {project.type} • {project.date}
+        {project.type}
+        {project.date ? ` • ${project.date}` : ""}
       </p>
 
       <ul

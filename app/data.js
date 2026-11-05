@@ -1,65 +1,58 @@
 const frontendTech = {
-  devopsCore: [
-    "Docker",
-    "Docker Compose",
-    "CI/CD",
-    "GitHub Actions",
-    "Git",
-    "GitHub",
-    "YAML Pipelines",
-    "Containerization",
+  cloudAndInfrastructure: [
+    "AWS VPC, EC2, EBS, EFS, and AMIs",
+    "IAM, Security Groups, and Auto Scaling",
+    "Elastic Load Balancing",
+    "S3 and Lambda",
+    "Terraform (Infrastructure as Code)",
   ],
 
-  cloudAndDeployment: [
-    "AWS EC2",
-    "AWS Fundamentals",
-    "Cloud Deployment Basics",
-    "Docker Hub",
-    "Render Deployment",
-    "Container Registry",
-    "Environment Configuration",
+  containersAndCiCd: [
+    "Docker",
+    "Docker Compose",
+    "GitHub Actions",
+    "Multi-job CI/CD Pipelines",
+    "Build Caching and Artifact Handoff",
+    "Git and GitHub",
   ],
 
   linuxAndSystems: [
-    "Linux (RHEL/CentOS, Ubuntu/Debian)",
+    "RHEL and Ubuntu",
+    "Bash Scripting",
+    "Python",
     "User & Group Management",
     "File Permissions & ACLs",
-    "Disk Management & LVM",
+    "LVM, EBS, and EFS Storage",
     "Boot Process & System Logging",
     "Package Management (RPM, DNF, APT)",
     "Service Management & Troubleshooting",
-    "SSH Hardening",
+    "Persistent Mounts and Live Resizing",
   ],
 
   securityAndNetworking: [
-    "Firewall (iptables)",
-    "SSH Hardening",
-    "Nmap",
+    "SSH Key-Based Access",
+    "Fail2ban and iptables",
     "TCP/IP",
-    "DNS",
-    "Network Troubleshooting",
-    "Least-Privilege Access",
-    "fail2ban",
+    "VPC Subnets and Routing",
+    "Security Groups",
+    "Least-Privilege IAM and Linux Access",
+    "Log Auditing",
   ],
 
-  fullstackSupport: [
-    "JavaScript",
-    "TypeScript",
-    "Node.js",
+  databasesAndBackend: [
+    "Node.js and Express.js",
     "Next.js",
+    "TypeScript",
     "REST APIs",
-    "MongoDB",
     "PostgreSQL",
-    "Redis",
+    "MongoDB and Redis Caching",
     "Authentication & Authorization",
-    "Frontend Deployment",
-    "Backend Integration",
   ],
 };
 
 const projects = [
   {
-    name: "YourStore -- Full-Stack Project with Docker & CI/CD Pipeline",
+    name: "YourStore -- Containerized E-Commerce Stack & CI/CD",
 
     type: "Full-Stack & DevOps",
 
@@ -72,6 +65,7 @@ const projects = [
       "MongoDB",
       "Docker",
       "GitHub Actions",
+      "Docker Hub",
       "Render",
     ],
 
@@ -80,10 +74,10 @@ const projects = [
     date: "2026-06-12",
 
     summary: [
-      "Built a full-stack e-commerce app and added the DevOps workflow around it: containerization, CI/CD, and cloud deployment.",
-      "Containerized the frontend and backend with Docker, using separate internal and public API endpoints for Next.js SSG/ISR scenarios.",
-      "Built a multi-job GitHub Actions CI/CD pipeline with linting, testing, Docker image build and push to Docker Hub, and deployment to Render.",
-      "Troubleshot production issues such as 502 host binding errors and CORS failures, and documented the setup and fixes in a DevOps journal.",
+      "Containerized a multi-tier Next.js/TypeScript application stack with Docker, separating internal build-time pre-rendering from runtime client API communication.",
+      "Engineered a multi-job GitHub Actions pipeline that separates lint/test verification from image builds, with artifact hand-off and build caching.",
+      "Automated Docker Hub image publishing on push and continuous deployment to Render.",
+      "Resolved production 502 gateway issues caused by container host binding and addressed CORS failures; documented the setup in a DevOps journal.",
     ],
 
     link: [
@@ -92,8 +86,12 @@ const projects = [
         url: "https://github.com/ak0384221/Yourstore-frontend",
       },
       {
-        name: "Backend Repo",
+        name: "Backend v1 Repo",
         url: "https://github.com/ak0384221/Yourstore-backend",
+      },
+      {
+        name: "Backend v2 Repo",
+        url: "https://github.com/ak0384221/yourstore-backend-2.0",
       },
       {
         name: "Frontend Image",
@@ -101,13 +99,57 @@ const projects = [
       },
       {
         name: "Backend Image",
-        url: "https://hub.docker.com/repository/docker/ak0384221/articlehub-backend/general",
+        url: "https://hub.docker.com/repository/docker/ak0384221/yourstore-backend/general",
       },
       {
         name: "DevOps Journal",
         url: "https://github.com/ak0384221/docker-yourstore-journal/blob/main/yourstore-journal.md",
       },
     ],
+
+    status: "completed",
+  },
+
+  {
+    name: "Highly Available Web Architecture on AWS",
+
+    type: "AWS Cloud Infrastructure",
+
+    category: ["aws", "cloud", "availability", "ec2"],
+
+    tech: ["AWS VPC", "EC2", "Auto Scaling", "Elastic Load Balancer", "Subnets", "Routing", "Security Groups"],
+
+    featured: true,
+
+    summary: [
+      "Designed and deployed an application environment in a custom VPC using EC2 instances, an Auto Scaling Group, and an Elastic Load Balancer.",
+      "Configured subnets, routing, and security groups to control traffic between the load balancer and application instances.",
+      "Used Auto Scaling to adjust EC2 capacity with demand and replace unhealthy instances automatically.",
+    ],
+
+    link: [],
+
+    status: "completed",
+  },
+
+  {
+    name: "AWS EC2, Storage & Image Automation Lab",
+
+    type: "Cloud Operations & Disaster Recovery",
+
+    category: ["aws", "ec2", "storage", "automation"],
+
+    tech: ["EC2", "EBS", "EFS", "IAM", "AWS Budgets", "EC2 Image Builder", "Terraform"],
+
+    featured: true,
+
+    summary: [
+      "Configured multi-tier security groups and IAM instance roles, provisioned servers with user-data automation, and set up AWS Budgets alerts.",
+      "Managed persistent EBS mounts and live resizing; practiced cross-Availability Zone snapshots and cross-Region replication for disaster recovery.",
+      "Automated golden AMI creation with EC2 Image Builder, mounted EFS across Availability Zones, and learned Terraform for infrastructure provisioning.",
+    ],
+
+    link: [],
 
     status: "completed",
   },
@@ -134,8 +176,8 @@ const projects = [
 
     link: [
       {
-        name: "Lab Overview",
-        url: "#",
+        name: "LVM Lab Journal",
+        url: "https://github.com/ak0384221/Linux-admin-troubleshooting/blob/main/rhel-lvm-hands-on-lab-journal.md",
       },
     ],
 
@@ -170,12 +212,7 @@ const projects = [
       "Used ACLs to grant fine-grained access for multi-user collaboration while preserving access boundaries.",
     ],
 
-    link: [
-      {
-        name: "Lab Overview",
-        url: "#",
-      },
-    ],
+    link: [],
 
     status: "completed",
   },
@@ -198,12 +235,7 @@ const projects = [
       "Reviewed authentication logs through journalctl and /var/log/auth.log to validate the security controls in use.",
     ],
 
-    link: [
-      {
-        name: "Lab Overview",
-        url: "#",
-      },
-    ],
+    link: [],
 
     status: "completed",
   },
@@ -226,12 +258,7 @@ const projects = [
       "Applied practical operational habits for service monitoring, maintenance, and reliable day-to-day server administration.",
     ],
 
-    link: [
-      {
-        name: "Lab Overview",
-        url: "#",
-      },
-    ],
+    link: [],
 
     status: "completed",
   },
@@ -254,12 +281,7 @@ const projects = [
       "Strengthened understanding of Linux fundamentals through hands-on tasks aligned with enterprise administration practices.",
     ],
 
-    link: [
-      {
-        name: "Certification Path",
-        url: "#",
-      },
-    ],
+    link: [],
 
     status: "in progress",
   },
